@@ -1,0 +1,21 @@
+---
+layout: default
+sublayout: blog
+title: Blog
+---
+
+<!-- Show last 5 posts here -->
+<div class="">
+	{% for post in site.posts limit: 5  %}
+	<article class="row">
+		<!-- {{post}} -->
+        <header class="row">
+        	
+				<a href="{{post.url}}" class="col-sm-8"><h4>{{ post.title }}</h4></a>
+				<h8 class="col-sm-4"><i class="fui-clock"></i><time datetime="{{post.date|date:"%F"}}">{{post.date|date:"%b %d, %Y"}}</time></h8>
+        </header>
+		<div >{{ post.excerpt }}</div>
+		<footer></footer>
+	</article>
+{% endfor %}
+</div>
