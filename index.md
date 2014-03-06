@@ -11,6 +11,6 @@ layout: default
  		 </div>
 	</div>
 
-	<a class="col-xs-offset-5 col-xs-7 col-sm-offset-9 col-sm-3 col-md-offset-9 col-md-3 col-lg-offset-9 col-lg-3" href="https://itunes.apple.com/cy/app/bbt/id417555928?mt=8"><img src="/images/Download_on_the_App_Store_Badge_US-UK_135x40.png" ></a>
+	<a class="col-xs-offset-3 col-xs-7 col-sm-offset-9 col-sm-3 col-md-offset-9 col-md-3 col-lg-offset-9 col-lg-3" href="https://itunes.apple.com/cy/app/bbt/id417555928?mt=8"><img src="/images/Download_on_the_App_Store_Badge_US-UK_135x40.png" ></a>
 
 </div>
