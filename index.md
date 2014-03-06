@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="jumbotron">
-	<img src="/images/bbt.png" class="col-sm-12 hidden-xs">
+	<img src="/images/BBT.png" class="col-sm-12 hidden-xs">
 	<div class="panel panel-default visible-xs">
   		<div class="panel-heading">BBT</div>
  		 <div class="panel-body">
