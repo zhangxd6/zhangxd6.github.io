@@ -520,10 +520,10 @@
 	"buffers":
 	[
 		{
-			"file": "about.html",
+			"file": "_config.yml",
 			"settings":
 			{
-				"buffer_size": 496,
+				"buffer_size": 18,
 				"line_ending": "Unix"
 			}
 		}
@@ -608,6 +608,9 @@
 	},
 	"file_history":
 	[
+		"/Users/zhangxd6/Library/Application Support/Sublime Text 3/Packages/User/Markdown (Standard).sublime-settings",
+		"/Users/zhangxd6/Documents/Xcode/GitHub/zhangxd6.github.io/about.html",
+		"/Users/zhangxd6/Library/Application Support/Sublime Text 3/Packages/MarkdownEditing/Markdown (Standard).sublime-settings",
 		"/Users/zhangxd6/Documents/Xcode/GitHub/zhangxd6.github.io/index.md",
 		"/Users/zhangxd6/Library/Application Support/Sublime Text 3/Packages/User/MultiMarkdown.sublime-settings",
 		"/Users/zhangxd6/Library/Application Support/Sublime Text 3/Packages/MarkdownEditing/MultiMarkdown.sublime-settings",
@@ -732,10 +735,7 @@
 		"/C/MyData/APMV3/DEV-351/Meridium/Html5/AHM/Scripts/UnitTest/eventviewerTest.js",
 		"/C/MyData/APMV3/DEV-351/Meridium/Html5/AHM/Scripts/UnitTest/eventmappingTest.js",
 		"/C/MyData/Code Utilities/simplelime/Data/Packages/User/Default (Windows).sublime-keymap",
-		"/C/MyData/Code Utilities/simplelime/Data/Packages/User/sublime_tfs.sublime-settings",
-		"/C/MyData/Code Utilities/simplelime/Data/Packages/Sublime TFS/sublime_tfs.sublime-settings",
-		"/C/MyData/Code Utilities/simplelime/Data/Packages/User/SublimeLinter.sublime-settings",
-		"/C/MyData/APMV3/DEV-351/Meridium/Html5/AHM/node_modules/grunt-contrib-copy/tasks/copy.js"
+		"/C/MyData/Code Utilities/simplelime/Data/Packages/User/sublime_tfs.sublime-settings"
 	],
 	"find":
 	{
@@ -909,19 +909,19 @@
 			[
 				{
 					"buffer": 0,
-					"file": "about.html",
+					"file": "_config.yml",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 496,
+						"buffer_size": 18,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								480,
-								480
+								18,
+								18
 							]
 						],
 						"settings":
@@ -929,10 +929,6 @@
 							"BracketHighlighterBusy": false,
 							"bh_regions":
 							[
-								"bh_unmatched",
-								"bh_unmatched_center",
-								"bh_unmatched_open",
-								"bh_unmatched_close",
 								"bh_single_quote",
 								"bh_single_quote_center",
 								"bh_single_quote_open",
@@ -941,34 +937,38 @@
 								"bh_round_center",
 								"bh_round_open",
 								"bh_round_close",
-								"bh_regex",
-								"bh_regex_center",
-								"bh_regex_open",
-								"bh_regex_close",
-								"bh_angle",
-								"bh_angle_center",
-								"bh_angle_open",
-								"bh_angle_close",
 								"bh_square",
 								"bh_square_center",
 								"bh_square_open",
 								"bh_square_close",
-								"bh_curly",
-								"bh_curly_center",
-								"bh_curly_open",
-								"bh_curly_close",
 								"bh_default",
 								"bh_default_center",
 								"bh_default_open",
 								"bh_default_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
 								"bh_tag",
 								"bh_tag_center",
 								"bh_tag_open",
 								"bh_tag_close",
-								"bh_double_quote",
-								"bh_double_quote_center",
-								"bh_double_quote_open",
-								"bh_double_quote_close"
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close"
 							],
 							"codeintel": true,
 							"codeintel_config":
@@ -1074,7 +1074,7 @@
 							},
 							"codeintel_tooltips": "popup",
 							"sublime_auto_complete": true,
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"syntax": "Packages/YAML/YAML.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
