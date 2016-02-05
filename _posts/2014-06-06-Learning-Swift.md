@@ -1,12 +1,12 @@
 ---
-layout: default
+layout: post
 sublayout: blog
 title: Swift basic compared with C Sharp
 ---
 
-#####Swift basic compared with C Sharp
+###Swift basic compared with C Sharp
 Swift takes a lot common features of modern programing languages. C# is one of my primary programing language used at work, therefore I created a language basic comparsion table.
-
+<!--more-->
 
 |                  			|Swift										| C#  |
 |Variable delcaration 		|`var s:String ="hello word"` 				|`String s ="hello world"; `  |

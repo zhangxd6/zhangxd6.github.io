@@ -2,15 +2,40 @@
 layout: default
 ---
 
-<div class="jumbotron">
-	<img src="/images/BBT.png" class="col-sm-12 hidden-xs">
-	<div class="panel panel-default visible-xs">
-  		<div class="panel-heading">BBT</div>
- 		 <div class="panel-body">
-  			  A simple utility to keep track of temperture.
- 		 </div>
-	</div>
 
-	<a class="col-xs-offset-3 col-xs-7 col-sm-offset-9 col-sm-3 col-md-offset-9 col-md-3 col-lg-offset-9 col-lg-3" href="https://itunes.apple.com/cy/app/bbt/id417555928?mt=8"><img src="/images/Download_on_the_App_Store_Badge_US-UK_135x40.png" ></a>
+<!-- Main -->
+<div id="main">
+    <section>
+        {% for post in site.posts limit:1 %}
+            <header class="major">
+                <h2>{{ post.title }}</h2>
+                <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}{% if post.author %} • {{ post.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+            </header>
 
+            <section>
+                {{ post.content }}
+            </section>
+        {% endfor %}
+    </section>
+    <section>
+        <div class="row">
+            {% for post in site.posts offset:1 %}
+
+                <article class="{% cycle '6u', '6u$' %} 12u(small)">
+                    <header>
+                        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+                    </header>
+                    <section>
+                        {{ post.excerpt }}
+                    </section>
+                    <footer>
+                        <ul class="actions">
+                            <li><a href="{{ post.url }}" class="button">Read More</a></li>
+                        </ul>
+                    </footer>
+                </article>
+
+            {% endfor %}
+        </div>
+    </section>
 </div>
