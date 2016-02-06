@@ -1654,7 +1654,7 @@ input[type="button"],
   position: fixed;
   text-align: right;
   top: 0;
-  width: 35%; }
+  width: 25%; }
   #header strong, #header b {
     color: #ffffff; }
   #header h2, #header h3, #header h4, #header h5, #header h6 {
@@ -1675,7 +1675,7 @@ input[type="button"],
   padding: 0 4em 6em 0;
   position: fixed;
   text-align: right;
-  width: 35%; }
+  width: 25%; }
   #footer .icons {
     margin: 1em 0 0 0; }
     #footer .icons a {
@@ -1701,10 +1701,10 @@ input[type="button"],
 
 /* Main */
 #main {
-  margin-left: 35%;
+  margin-left: 25%;
   max-width: 54em;
   padding: 8em 4em 4em 4em;
-  width: calc(100% - 35%); }
+  width: calc(100% - 25%); }
   #main > section {
     border-top: solid 2px #efefef;
     margin: 4em 0 0 0;
@@ -1932,7 +1932,7 @@ body.is-touch .poptrox-popup .closer {
   /* Header */
   #header {
     padding: 6em 3em 3em 3em;
-    width: 30%; }
+    width: 25%; }
     #header h1 {
       font-size: 1.25em; }
       #header h1 br {
@@ -1940,7 +1940,7 @@ body.is-touch .poptrox-popup .closer {
   /* Footer */
   #footer {
     padding: 0 3em 5em 3em;
-    width: 30%; }
+    width: 25%; }
     #footer .copyright li {
       border-left-width: 0;
       display: block;
@@ -1949,10 +1949,10 @@ body.is-touch .poptrox-popup .closer {
       padding-left: 0; }
   /* Main */
   #main {
-    margin-left: 30%;
+    margin-left: 25%;
     max-width: none;
     padding: 6em 3em 3em 3em;
-    width: calc(100% - 30%); } }
+    width: calc(100% - 25%); } }
 
 /* Medium */
 @media screen and (max-width: 980px) {
@@ -1977,6 +1977,8 @@ body.is-touch .poptrox-popup .closer {
       font-size: 1.75em; }
       #header h1 br {
         display: inline; }
+    #header .image.avatar {
+      display: none; }
   /* Footer */
   #footer {
     background-attachment: scroll;
@@ -1985,10 +1987,10 @@ body.is-touch .poptrox-popup .closer {
     background-position: top left,						bottom center;
     background-repeat: repeat,							no-repeat;
     background-size: auto,							cover;
-    bottom: auto;
+    bottom: 0;
     left: auto;
     padding: 1em 1em 1.5em 1em;
-    position: relative;
+    position: fixed;
     text-align: center;
     width: 100%; }
     #footer .icons {
@@ -2031,6 +2033,8 @@ body.is-touch .poptrox-popup .closer {
     padding: 0.9em 0.6em; }
     #header h1 {
       font-size: 1.35em; }
+    #header .image.avatar {
+      display: none; }
   /* Footer */
   #footer {
     padding: 0.9em 0.6em; }
@@ -2072,6 +2076,8 @@ body.is-touch .poptrox-popup .closer {
   #header {
     padding: 0.5em 0.5em; }
     #header h1 br {
+      display: none; }
+    #header .image.avatar {
       display: none; }
   /* Footer */
   #footer .copyright li {

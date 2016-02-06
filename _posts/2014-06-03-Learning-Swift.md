@@ -1,6 +1,5 @@
 ---
-layout: post
-
+layout: default
 title: Learning Swift
 ---
 

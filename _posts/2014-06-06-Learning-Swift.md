@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 sublayout: blog
 title: Swift basic compared with C Sharp
 ---
