@@ -4,7 +4,8 @@ title: handle role based unathorized infinite loop
 ---
 Asp.net provide **Authorize** to decorate the controllers or actions with authorization control. However when we scope the access 
 to the centain roles, it creates a infinite call loop to the identity server implemented with identityserver3
-<--more-->
+
+<!--more-->
 It turns out, Authorize attribute generate 401 unauthorized response which redirects to Identityserver for authorization. Since the
 user is authenticated and redirected back. However the user is not in the role, the 401 is generated again. Now we are in these dead
 loop. The way out of the loop, is to let authorize generated 403 forbidden status. Unfortunately, AuthorizeAttribute is not implemented
