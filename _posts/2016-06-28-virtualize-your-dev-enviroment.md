@@ -6,7 +6,7 @@ title: virtualize your dev environment
 
 It is crucial for developers to be authoring code and test it in a production-like environment. Asking extra hardware most time is cost prohibited route, fortunately, virtualization and containerization provide developers with sufficient tools to manage this. This post will focus on the Vagrant to establish virtual machines on window os.
 
-<!-- more-->
+<!--more-->
 
 >Create a base box
 

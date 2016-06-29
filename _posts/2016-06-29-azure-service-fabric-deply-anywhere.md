@@ -5,7 +5,7 @@ title: azure service fabric deploy anywhere
 
 This post I will discuss the setup I used for my research on Microsoft azure service fabric on premise.
 
-<!-- more -->
+<!--more-->
 
 I don't have the luxury to have multiple computers readily available so I route to use virtual machines that I can spin off on my box where I have 32G memory that is enough for 3 nodes with minimum
 configuration recommended by Microsoft. Naturally, the *Vagrant* is my choice since the windows server dependence.
