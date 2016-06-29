@@ -1,14 +1,14 @@
 ---
 layout: default
-title: azure service fabric deply anywhere 
+title: azure service fabric deploy anywhere 
 ---
 
-This post I will discuss the setup I used for my research on microsoft azure service fabric on premise.
+This post I will discuss the setup I used for my research on Microsoft azure service fabric on premise.
 
 <!-- more -->
 
-I don't have the luxury to have multiple computers readily avaiable so I route to use virtual machines that I can spin off on my box where I have 32G memory that is enough for 3 nodes with minimum
-configuration recomened by Microsoft. Naturally, the *Vagrant* is my choice since the windows server dependence.
+I don't have the luxury to have multiple computers readily available so I route to use virtual machines that I can spin off on my box where I have 32G memory that is enough for 3 nodes with minimum
+configuration recommended by Microsoft. Naturally, the *Vagrant* is my choice since the windows server dependence.
 
 >Preparation
 
@@ -16,8 +16,8 @@ First of all, I have to a window base box. I created a base box based on windows
 
 >Cluster setting
 
-For my testing, I opted for the samplest cluster which inculdes 3 nodes spreading into 3 update domains and fault domains. The service bus provides the load balance inside its services, however, a 
-external load balancer needed for any trafic outside to communicate with service fabric appliations, which I assume all communication happens through APIs via http.
+For my testing, I opted for the simplest cluster which includes 3 nodes spreading into 3 update domains and fault domains. The service bus provides the load balance inside its services, however, a 
+external load balancer needed for any traffic outside to communicate with service fabric applications, which I assume all communication happens through APIs via HTTP.
 
 Now the code/scripts.
 
@@ -75,10 +75,10 @@ now we don't want to install runtime manually for provision vms
         end
 ~~~
 
-here we disable the firewall altogether, install the c++ runtime. Once the last vm is up, we start the setup of azure service fabric cluster
+here we disable the firewall altogether, install the c++ run-time. Once the last vm is up, we start the setup of azure service fabric cluster
 
 
-Did you forget the load balancer? No, here is it. I chose haproxy on a ubuntu.
+Did you forget the load balancer? No, here is it. I chose haproxy on a Ubuntu.
 
 ~~~
 oot.vm.define "loadbalancer" do |ubuntu|
