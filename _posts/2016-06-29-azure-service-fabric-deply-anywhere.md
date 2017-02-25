@@ -4,6 +4,7 @@ title: azure service fabric deploy anywhere
 tags: 
  - azure
  - microservice
+ - azure service fabric
 ---
 
 This post I will discuss the setup I used for my research on Microsoft azure service fabric on premise.

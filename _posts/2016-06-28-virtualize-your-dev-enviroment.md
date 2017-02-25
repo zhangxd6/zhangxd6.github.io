@@ -1,6 +1,9 @@
 ---
 layout: post
 title: virtualize your dev environment
+tags: 
+ - vagrant
+ - dev
 ---
 
 
