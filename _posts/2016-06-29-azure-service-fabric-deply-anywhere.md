@@ -1,6 +1,9 @@
 ---
-layout: default
+layout: post
 title: azure service fabric deploy anywhere 
+tags: 
+ - azure
+ - microservice
 ---
 
 This post I will discuss the setup I used for my research on Microsoft azure service fabric on premise.
@@ -10,18 +13,18 @@ This post I will discuss the setup I used for my research on Microsoft azure ser
 I don't have the luxury to have multiple computers readily available so I route to use virtual machines that I can spin off on my box where I have 32G memory that is enough for 3 nodes with minimum
 configuration recommended by Microsoft. Naturally, the *Vagrant* is my choice since the windows server dependence.
 
->Preparation
+## Preparation
 
 First of all, I have to a window base box. I created a base box based on windows server 2012 r2 using a tool called *packer*.  The [blog](http://www.developer.com/net/virtualize-your-windows-development-environments-with-vagrant-packer-and-chocolatey-part-1.html) is the good resource to get it setup
 
->Cluster setting
+## Cluster setting
 
 For my testing, I opted for the simplest cluster which includes 3 nodes spreading into 3 update domains and fault domains. The service bus provides the load balance inside its services, however, a 
 external load balancer needed for any traffic outside to communicate with service fabric applications, which I assume all communication happens through APIs via HTTP.
 
 Now the code/scripts.
 
->Vagrantfile
+##Vagrantfile
 
 we need 3 vms
 
@@ -106,7 +109,7 @@ SCRIPT
    end
 ~~~
 
-> Get cluster up
+## Get cluster up
 
 now show time!
 

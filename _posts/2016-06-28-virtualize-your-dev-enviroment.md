@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: virtualize your dev environment
 ---
 

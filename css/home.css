@@ -1,0 +1,190 @@
+    .main {
+        position: absolute;
+        top: 60px;
+    }
+    
+    .hex {
+        float: left;
+        margin-left: 3px;
+        margin-bottom: -26px;
+    }
+    
+    .hex .top {
+        width: 0;
+        border-bottom: 30px solid #6C6;
+        border-left: 52px solid transparent;
+        border-right: 52px solid transparent;
+    }
+    
+    .hex .middle {
+        width: 104px;
+        height: 60px;
+        background: #6C6;
+    }
+    
+    .hex .bottom {
+        width: 0;
+        border-top: 30px solid #6C6;
+        border-left: 52px solid transparent;
+        border-right: 52px solid transparent;
+    }
+    
+    .hex-row {
+        clear: left;
+    }
+    
+    .hex-row.even {
+        margin-left: 53px;
+    }
+    
+    .hexcluster {
+        height: 250px;
+        margin: 0 60px;
+        float: left;
+    }
+    
+    .banner h1 {
+        text-transform: uppercase;
+    }
+    
+    .banner h4 {
+        text-transform: capitalize;
+        font-weight: 400;
+    }
+    
+    #banner-contact {
+        margin: auto;
+        width: 100%;
+        position: relative;
+        top: 10px;
+    }
+    
+    .bannerpoint {
+        margin-top: 50px;
+    }
+    
+    .bannerpoint li {
+        list-style: dash;
+    }
+    
+    section {
+        margin: 50px 0;
+    }
+    
+    h2 {
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+    .service {
+        margin-left: 10px;
+    }
+    
+    .service h4 {
+        text-transform: uppercase;
+        text-align: center;
+    }
+    
+    .service .circle {
+        width: 100px;
+        height: 100px;
+        background: transparent;
+        -moz-border-radius: 50px;
+        -webkit-border-radius: 50px;
+        border-radius: 50px;
+        border: solid;
+    }
+    
+    .circle {
+        position: relative;
+        left: calc(50% - 50px);
+    }
+    
+    .circle i {
+        position: relative;
+        top: 19px;
+        left: 17px;
+    }
+    
+    .circle .fa-mobile {
+        left: 35px;
+    }
+    
+    .circle .fa-user {
+        left: 25px;
+    }
+    
+    .processStep h4 {
+        position: relative;
+        top: -58px;
+        left: 128px;
+        text-transform: uppercase;
+        font-size: 3rem;
+    }
+    
+    .processIcon-Container {
+        /*width: 100px;
+    height: 100px;
+    background: transparent;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    border-style: solid;*/
+        margin-top: 30px;
+        width: 104px;
+        height: 60px;
+        background-color: #e1f2d7;
+        position: relative;
+    }
+    
+    .processIcon-Container:before {
+        content: " ";
+        width: 0;
+        height: 0;
+        border-bottom: 30px solid #e1f2d7;
+        border-left: 52px solid transparent;
+        border-right: 52px solid transparent;
+        position: absolute;
+        top: -30px;
+    }
+    
+    .processIcon-Container:after {
+        content: "";
+        width: 0;
+        position: relative;
+        bottom: -32px;
+        border-top: 30px solid #e1f2d7;
+        border-left: 52px solid transparent;
+        border-right: 52px solid transparent;
+    }
+    
+    .processIcon-Icon {
+        position: relative;
+        top: 3px;
+        left: 24px;
+    }
+    
+    footer {
+        text-align: center;
+    }
+    
+    .indicates-required,
+    .asterisk {
+        color: red;
+    }
+    
+    @media (min-width: 768px) {
+        .col-md-4 {
+            width: 32%;
+        }
+        .jumbotron h1 {
+            font-size: 3.2em;
+            font-weight: 400;
+        }
+    }
+    
+    @media(max-width:768px) {
+        .hexcluster {
+            display: none;
+        }
+    }
