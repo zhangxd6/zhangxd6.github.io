@@ -1,6 +1,10 @@
 ---
-layout: default
+layout: post
 title: secure your webapi with oauth2 and openid using identityserver3
+tags:
+ - oauth
+ - webapi
+ - identityserver3
 ---
 
 One of my projects progesses to the point that we need to have Access Authorization and Authetication. Since the project is 

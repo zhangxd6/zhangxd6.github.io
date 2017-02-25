@@ -129,6 +129,10 @@ h1 {
     padding-top: 0;
 }
 
+#main section .label-info {
+    text-transform: capitalize;
+}
+
 
 /* XLarge */
 
