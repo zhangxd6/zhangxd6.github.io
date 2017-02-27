@@ -5,5 +5,10 @@
         <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
     </header>
     {{ content }}
+    <div class="">
+        {% for tag in page.tags %}
+
+        <span class="label label-info">{{ tag }}</span> {% endfor %}
+    </div>
 </div>
 {% include footer.html %}

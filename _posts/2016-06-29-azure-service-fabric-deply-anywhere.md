@@ -25,7 +25,7 @@ external load balancer needed for any traffic outside to communicate with servic
 
 Now the code/scripts.
 
-##Vagrantfile
+## Vagrantfile
 
 we need 3 vms
 

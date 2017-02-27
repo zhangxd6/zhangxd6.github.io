@@ -1,13 +1,13 @@
 ---
 layout: post
-title: My Frist User Group presentation
+title: My User Group presentation
 tags:
   - Speaking
   - azure
   - azure service fabric
 ---
 
- A few days back, I gave my first local user group presentation, 
+ A few days back, I gave my local user group presentation, 
  **[Get Started with Azure Service Fabric](http://lanug.net/Events/Getting-Started-with-Azure-Service-Fabric)**.  
  I really appreciate the Lower Alabama .Net User Group gave me this opportunity to speak. It was a great experience.
  Looking back what I could do better.
