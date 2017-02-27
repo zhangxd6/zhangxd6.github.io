@@ -246,4 +246,4 @@ Instead of previous example that will use the correlation id stored in callconte
 Note: the header name has to be "correlationid" and namespace is empty string.
 
 
-in [next post]({% post_url 2017-03-1-azure-service-fabric-correlationid %}), we will explore the same idea to the Azure Service Fabric
+in next post, we will explore the same idea to the Azure Service Fabric
