@@ -139,4 +139,4 @@ using Microsoft.Owin;
   }
 ~~~
 
-in [next part]({% post_url 2017-02-27-give-logs-context-correlation-id-2 %}), we will see how to archive it for WCF services.
+in [next part]({% post_url 2017-02-28-give-logs-context-correlation-id-2 %}), we will see how to archive it for WCF services.
