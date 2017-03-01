@@ -1,4 +1,8 @@
 ---
-layout: default
-title: using message to bridge applications asynchronically 
+layout: post
+title: using message to bridge applications asynchronously 
+tags:
+  - microservice
+  - event
+  - asynchronous
 ---

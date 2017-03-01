@@ -1,9 +1,14 @@
 ---
-layout: default
-title: handle role based unathorized infinite loop
+layout: post
+title: handle role based unauthorized infinite loop
+tags:
+  - webapi
+  - authorization
+  - security
+  - identityserver3
 ---
 Asp.net provide **Authorize** to decorate the controllers or actions with authorization control. However when we scope the access 
-to the centain roles, it creates a infinite call loop to the identity server implemented with identityserver3
+to the certain roles, it creates a infinite call loop to the identity server implemented with identityserver3
 
 <!--more-->
 It turns out, Authorize attribute generate 401 unauthorized response which redirects to Identityserver for authorization. Since the
