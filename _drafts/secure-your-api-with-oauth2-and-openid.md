@@ -1,6 +1,6 @@
 ---
 title: secure your webapi with oauth2 and openid using identityserver3
-date: 2017-10-28 21:51:49.237000000 Z
+date: 2017-10-28 21:51:00 Z
 tags:
 - oauth
 - webapi
@@ -106,7 +106,8 @@ How to interact with these endpoint will be determined by the type of applicatio
 ### Window Authentication
  
 ### MVC Hybird Flow
+
  
- 
+ ![gccc_social-01.jpg](/uploads/gccc_social-01.jpg)
 
 
