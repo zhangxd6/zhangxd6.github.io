@@ -1,13 +1,15 @@
 ---
-layout: post
 title: Give logs context with correlationId -  Part1
+date: 2017-02-27 00:00:00 Z
 tags:
- - logs
- - correlationId
- - microservice
- - ASP.net
- - WebApi
+- logs
+- correlationId
+- microservice
+- ASP.net
+- WebApi
+layout: post
 ---
+
 In today's softwares, a single client request is typically fulfilled by multiple services. In layered architecture, the call is
 received by presentation or api layer and passed along to business logic layer and eventually to persistent layer. These layer can
 locate physically in the same server or span across multiple servers. We can produce logs extensively to help us to monitor the 

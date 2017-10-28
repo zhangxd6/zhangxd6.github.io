@@ -1,10 +1,11 @@
 ---
+title: azure service fabric deploy anywhere
+date: 2016-06-29 00:00:00 Z
+tags:
+- azure
+- microservice
+- azure service fabric
 layout: post
-title: azure service fabric deploy anywhere 
-tags: 
- - azure
- - microservice
- - azure service fabric
 ---
 
 This post I will discuss the setup I used for my research on Microsoft azure service fabric on premise.

@@ -1,13 +1,15 @@
 ---
-layout: post
 title: Logging with correlationId in azure service fabric
+date: 2017-03-01 00:00:00 Z
 tags:
- - logs
- - correlationId
- - microservice
- - azure
- - azure service fabric
+- logs
+- correlationId
+- microservice
+- azure
+- azure service fabric
+layout: post
 ---
+
  Azure Service Fabric is the Microsoft offer to 
  `
   Build and operate always-on, scalable, distributed applications

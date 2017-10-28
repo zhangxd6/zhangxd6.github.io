@@ -1,12 +1,14 @@
 ---
-layout: post
 title: Give logs context with correlationId -  Part2
+date: 2017-02-28 00:00:00 Z
 tags:
- - logs
- - correlationId
- - microservice
- - WCF
+- logs
+- correlationId
+- microservice
+- WCF
+layout: post
 ---
+
  In [part one]({% post_url 2017-02-27-give-logs-context-with-correlation-id %}), we documented to pass correlationid to the asp.net MVC and OWIN applications. In this post, we will see how to accomplish it in WCF services.
 <!--more-->
 

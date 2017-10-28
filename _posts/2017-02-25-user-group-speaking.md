@@ -1,10 +1,11 @@
 ---
-layout: post
 title: My User Group presentation
+date: 2017-02-25 00:00:00 Z
 tags:
-  - Speaking
-  - azure
-  - azure service fabric
+- Speaking
+- azure
+- azure service fabric
+layout: post
 ---
 
  A few days back, I gave my local user group presentation, 

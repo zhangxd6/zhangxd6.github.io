@@ -1,21 +1,22 @@
-# Site settings
+---
+title: A developer's wonder garden
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+email: xzhang@zhresearches.com
+description: 'A home to share my passion.
 
-title: A developer's wonder garden # Title of your site
-email: xzhang@zhresearches.com # Your contant email
-
-description: > # this means to ignore newlines until "baseurl:"
- A home to share my passion.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://www.zhresearches.com" # the base hostname & protocol for your site
+'
+baseurl: ''
+url: https://www.zhresearches.com
 enforce_ssl: www.zhresearches.com
-# Social links.
-# Replace the word 'example' with your username if you want to include the icon in the left sidebar
-# Delete the word 'example' if you don't want to include the icon in the left sidebar
-
-twitter_username:     zhangxd6  # Replace this with your Twitter username
-github_username:      zhangxd6  # Replace this with your GitHub username
-linkedin_username:    xiangdong-zhang-1b89923  # Replace this with your LinkedIn username
-excerpt_separator:   <!--more-->
-# Build settings
+twitter_username: zhangxd6
+github_username: zhangxd6
+linkedin_username: xiangdong-zhang-1b89923
+excerpt_separator: "<!--more-->"
 markdown: kramdown
-

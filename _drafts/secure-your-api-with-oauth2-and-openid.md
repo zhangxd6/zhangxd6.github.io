@@ -1,10 +1,11 @@
 ---
-layout: post
 title: secure your webapi with oauth2 and openid using identityserver3
+date: 2017-10-28 21:51:49.237000000 Z
 tags:
- - oauth
- - webapi
- - identityserver3
+- oauth
+- webapi
+- identityserver3
+layout: post
 ---
 
 One of my projects progesses to the point that we need to have Access Authorization and Authetication. Since the project is 

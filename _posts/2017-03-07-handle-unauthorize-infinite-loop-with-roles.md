@@ -1,12 +1,14 @@
 ---
-layout: post
 title: handle role based unauthorized infinite loop
+date: 2017-03-07 00:00:00 Z
 tags:
-  - webapi
-  - authorization
-  - security
-  - identityserver3
+- webapi
+- authorization
+- security
+- identityserver3
+layout: post
 ---
+
 Asp.net provide **Authorize** attribute to decorate the controllers or actions with authorization control. The identityserver provide nice framework to archive the sigle sign with oAuth protocol. However when we scope the access to the certain roles and the request fails to be authorized, it creates a infinite call loop to the identity server implemented with identityserver3 without tweeking.
 
 <!--more-->

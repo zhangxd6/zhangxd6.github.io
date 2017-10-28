@@ -1,12 +1,14 @@
 ---
-layout: post
 title: serverless backend -- sending email for a website
+date: 2017-04-11 00:00:00 Z
 tags:
- - azure function
- - serverless
- - azure
- - web 
+- azure function
+- serverless
+- azure
+- web
+layout: post
 ---
+
  Serverless architectures is currently leading the conversations. It is continuing the trend of industry that is trying to abstract out the complexity of infrastructure from the application developers to allow them focus on core values they provide, fast time to market and minimize the cost to establish their own IT infrastructure. Three major cloud providers started offer it to the developers; AWS Lambda, Google Cloud function and Microsoft Azure Function. This post will not try to discuss Pros or Cons of serverless architecture or the comparison of offers providers have. I will try to document the steps to archive a common functionality of website, sending email from a website accomplished using Azure function. Hopefully, this will give a peek of serverless backend. 
 <!--more-->
 
