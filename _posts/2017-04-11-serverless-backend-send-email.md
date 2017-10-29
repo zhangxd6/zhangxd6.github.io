@@ -9,16 +9,16 @@ tags:
 layout: post
 ---
 
- Serverless architectures is currently leading the conversations. It is continuing the trend of industry that is trying to abstract out the complexity of infrastructure from the application developers to allow them focus on core values they provide, fast time to market and minimize the cost to establish their own IT infrastructure. Three major cloud providers started offer it to the developers; AWS Lambda, Google Cloud function and Microsoft Azure Function. This post will not try to discuss Pros or Cons of serverless architecture or the comparison of offers providers have. I will try to document the steps to archive a common functionality of website, sending email from a website accomplished using Azure function. Hopefully, this will give a peek of serverless backend. 
+ Serverless architectures are currently leading the conversations. It is continuing the trend of the industry that is trying to abstract out the complexity of infrastructure from the application developers to allow them to focus on core values they provide, fast time to market and minimize the cost to establish their own IT infrastructure. Three major cloud providers started offering it to the developers; AWS Lambda, Google Cloud function, and Microsoft Azure Function. This post will not try to discuss Pros or Cons of serverless architecture or the comparison of offers providers have. I will try to document the steps to archive a common functionality of a website, sending email from a website accomplished using the Azure function. Hopefully, this will give a peek of the serverless backend. 
 <!--more-->
 
 ## Requirement
 
-  I have a client's website and there is a contact section to allow visitor send the email to the owner of website.
+  I have a client's website and there is a contact section to allow visitor send the email to the owner of a website.
 
   ![Contact Form](/images/2017/4/form.png) 
 
-  and in javascript file, I will handle the click event and send the ajax post request to send email on behave of visitor
+  and in the javascript file, I will handle the click event and send the ajax post request to send email on behave of visitor
 
 ~~~
         $('#submit').click(function() {
@@ -37,7 +37,7 @@ layout: post
             }); 
 ~~~
 
-  One of ways to archive it will need the owner provide a server hosting a endpoint to relay the email. This will require the ownership or the access of the server. The cloud functions can help to remove the need of server. 
+  One of the ways to archive it will need the owner provide a server hosting an endpoint to relay the email. This will require the ownership or the access of the server. The cloud functions can help to remove the need of a server. 
 
  
 ## Azure Function
@@ -47,7 +47,7 @@ layout: post
 
 ### Send Grid
 
-We are going to use sendgrid to facilitate the sending of emails. The Microsoft Azure provide a easy way to set up the sendgrid account.
+We are going to use sendgrid to facilitate the sending of emails. The Microsoft Azure provides an easy way to set up the sendgrid account.
 
 ![SendGrid Email](/images/2017/4/SendGrid_Email.png) 
 
@@ -63,9 +63,9 @@ Now let's create a azure functions, Function App,
 
 ![sendgrid function](/images/2017/4/demosendgriddemo.png) 
 
-then click the plus icon along side with *Functions*. In the template, select *HttpTrigger-CSharp"
+then click the plus icon alongside with *Functions*. In the template, select *HttpTrigger-CSharp"
 
-Once function is created, go to the *Integrate*, add a new sendgrid out and remove the http out. It should look similar to
+Once the function is created, go to the *Integrate*, add a new sendgrid out and remove the HTTP out. It should look similar to
 
 ![sendgrid integrate](/images/2017/4/HttpTriggerCSharp.png) 
 
@@ -125,10 +125,10 @@ public class Contact
 }
 ~~~
 
-Should I run the test, will I be able receive the email?
+Should I run the test, will I be able to receive the email?
 
-Not quite. The sendGrid need a api key. Now go back the *sendgrid* and navigate to sendgrid account where you can create a API Key.
-Now go to the *Applicaton Setting* of azure function to enter API key to *SendGridApiKey*.
+Not quite. The sendGrid need an api key. Now go back the *sendgrid* and navigate to sendgrid account where you can create an API Key.
+Now go to the *Application Setting* of azure function to enter API key to *SendGridApiKey*.
 
 ![app setting](/images/2017/4/Application_settings.png) 
 
@@ -136,5 +136,5 @@ it should match the one in output setting of function
 
 ![sendgrid integrate](/images/2017/4/HttpTriggerCSharp.png) 
 
-Now you can replace the url in the javascript with the function url and have full functional contact form.
+Now you can replace the URL in the javascript with the function URL and have a full functional contact form.
 
