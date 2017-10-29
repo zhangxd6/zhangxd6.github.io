@@ -8,16 +8,16 @@ tags:
 layout: post
 ---
 
-This post I will discuss the setup I used for my research on Microsoft azure service fabric on premise.
+This post I will discuss the setup I used for my research on Microsoft Azure service fabric on premise.
 
 <!--more-->
 
-I don't have the luxury to have multiple computers readily available so I route to use virtual machines that I can spin off on my box where I have 32G memory that is enough for 3 nodes with minimum
+I don't have the luxury to have multiple computers readily available so I route to use virtual machines that I can spin off on my box where I have a 32G memory that is enough for 3 nodes with minimum
 configuration recommended by Microsoft. Naturally, the *Vagrant* is my choice since the windows server dependence.
 
 ## Preparation
 
-First of all, I have to a window base box. I created a base box based on windows server 2012 r2 using a tool called *packer*.  The [blog](http://www.developer.com/net/virtualize-your-windows-development-environments-with-vagrant-packer-and-chocolatey-part-1.html) is the good resource to get it setup
+First of all, I have to a window base box. I created a base box based on windows server 2012 r2 using a tool called *packer*.  The [blog](http://www.developer.com/net/virtualize-your-windows-development-environments-with-vagrant-packer-and-chocolatey-part-1.html) is the good resource to get it set up
 
 ## Cluster setting
 
@@ -28,7 +28,7 @@ Now the code/scripts.
 
 ## Vagrantfile
 
-we need 3 vms
+we need 3 VMs
 
 ~~~
     (1..3).each do |i|
@@ -60,7 +60,7 @@ let's set the network
         config.vm.network "private_network", ip: "192.168.100.#{i}0" ,virtualbox__intnet: true
 ~~~
 
-it is turn for adjusting the vm
+it turns for adjusting the VM
 
 ~~~
         config.vm.provider "virtualbox" do |vb|
@@ -70,7 +70,7 @@ it is turn for adjusting the vm
         end
 ~~~
 
-now we don't want to install runtime manually for provision vms
+now we don't want to install runtime manually for provision VMs
 
 ~~~
         config.vm.provision "shell",path:"installCplusRuntime.cmd"
@@ -80,10 +80,10 @@ now we don't want to install runtime manually for provision vms
         end
 ~~~
 
-here we disable the firewall altogether, install the c++ run-time. Once the last vm is up, we start the setup of azure service fabric cluster
+here we disable the firewall altogether, install the c++ run-time. Once the last VM is up, we start the setup of Azure service fabric cluster
 
 
-Did you forget the load balancer? No, here is it. I chose haproxy on a Ubuntu.
+Did you forget the load balancer? No, here is it. I chose haproxy on an Ubuntu.
 
 ~~~
 oot.vm.define "loadbalancer" do |ubuntu|
@@ -116,7 +116,7 @@ SCRIPT
 now show time!
 
 ~~~
-   vagarnt up
+   vagrant up
 ~~~
 
 I did not include other scripts that you can find at this [gist](https://gist.github.com/zhangxd6/d5017c706375b6ce1c4e5c83da0c5c12)
