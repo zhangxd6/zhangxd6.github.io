@@ -13,23 +13,23 @@ layout: post
 <!--more-->
 
 ## Theory
-  As previous stated, correlation Id is a useful way to reconstruct the call graph. When the first call is make, a Unique Identifier, GUID, is generated, this Guid is then passed along to subsequent calls, which is put into logs in a structured way via the logging framework provided to a centralized log storage. You then can take advantage of the capabilities, the log management tool (Splunk) to trace the event all the way through your call graph. 
+  As previously stated, correlation Id is a useful way to reconstruct the call graph. When the first call is made, a Unique Identifier, GUID, is generated, this GUID is then passed along to subsequent calls, which is put into logs in a structured way via the logging framework provided to a centralized log storage. You then can take advantage of the capabilities, the log management tool (Splunk) to trace the event all the way through your call graph. 
  
 ### Client:
  
-  When a client initiate a request to WCF service, we will exam if it is a initiating call. If so, a GUID will be generated and add outgoing header with it. Otherwise, it will reuse the GUID coming from the upstream call.
+  When a client initiates a request to WCF service, we will examine if it is an initiating call. If so, a GUID will be generated and add an outgoing header with it. Otherwise, it will reuse the GUID coming from the upstream call.
  
 ### Server:
  
-  Whenever the server receive a request, it will exam the incoming header for the existence of correlation Id. If it find it, then it will be pass along with downstream call and used for any log in current context.
+  Whenever the server receives a request, it will exam the incoming header for the existence of correlation Id. If it finds it, then it will be pass along with downstream call and used for any log in the current context.
 
 ## Implementation
 
-How can we generate such GUID implicitly without requiring a lot efforts on application developers to add it to existing application or brand new application? The solution we chose is to have a custom header on each WCF calls. The messageInspector, which will inspect the outgoing messages (Client) or incoming messages (Server), can help us to fulfill the requirement.
+How can we generate such GUID implicitly without requiring a lot of efforts on application developers to add it to an existing application or brand new application? The solution we chose is to have a custom header on each WCF calls. The messageInspector, which will inspect the outgoing messages (Client) or incoming messages (Server), can help us to fulfill the requirement.
  
 ### Client
  
-On client side, we implement the `IClientMessageInspector` to add header on every outgoing request with GUID. A `IEndpointBehavior` implementation will inject this inspector to the client endpoint and a ` System.ServiceModel.Configuration.BehaviorExtensionElement` is to facilitate it through the configuration files.
+On the client side, we implement the `IClientMessageInspector` to add a header on every outgoing request with GUID. An `IEndpointBehavior` implementation will inject this inspector to the client endpoint and a ` System.ServiceModel.Configuration.BehaviorExtensionElement` is to facilitate it through the configuration files.
  
 ~~~
  internal class ClientMessageInspector : IClientMessageInspector
@@ -89,7 +89,7 @@ On client side, we implement the `IClientMessageInspector` to add header on ever
 ~~~
  
 ## Server
-  On the server side, We implement the `IDispatchMessageInspector` to inspect the received requests. A `ServiceMessageHeaderInspectorAttribute` is created to help decorate the service class that every request are checked before the operations are performed
+  On the server side, We implement the `IDispatchMessageInspector` to inspect the received requests. A `ServiceMessageHeaderInspectorAttribute` is created to help decorate the service class that every request is checked before the operations are performed
  
 ~~~
   public class ServiceMessageHeaderInspector : IDispatchMessageInspector
@@ -154,7 +154,7 @@ On client side, we implement the `IClientMessageInspector` to add header on ever
 
 ### Server
  
-  On the server side, it is pretty straight forward, you will add the `Common.dll` as a reference and then add `ServiceMessageHeaderInspectorAttribute` on your service class implementation.
+  On the server side, it is pretty straightforward, you will add the `Common.dll` as a reference and then add `ServiceMessageHeaderInspectorAttribute` on your service class implementation.
 
 ~~~
     [ServiceMessageHeaderInspector]
@@ -200,7 +200,7 @@ On client side, we implement the `IClientMessageInspector` to add header on ever
  
 #### Pragmatically
  
-You will need explicitly add the `Common.Logging.WCF.ClientEndPointBehavior` to your wcf channel
+You will need explicitly add the `Common.Logging.WCF.ClientEndPointBehavior` to your WCF channel
  
 **.net 452 and .net 46**
 
@@ -226,7 +226,7 @@ You will need explicitly add the `Common.Logging.WCF.ClientEndPointBehavior` to 
                 ...
 ~~~
 
-Instead of previous example that will use the correlation id stored in callcontext if it is presented, you can specify correlation id specifically for your wcf request
+Instead of the previous example that will use the correlation id stored in callcontext if it is presented, you can specify correlation id specifically for your WCF request
  
  
 ~~~
@@ -245,7 +245,7 @@ Instead of previous example that will use the correlation id stored in callconte
  
 ~~~
 
-Note: the header name has to be "correlationid" and namespace is empty string.
+Note: the header name has to be "correlationid" and namespace is an empty string.
 
 
 in next post, we will explore the same idea to the Azure Service Fabric
