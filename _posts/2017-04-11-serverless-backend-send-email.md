@@ -37,7 +37,7 @@ layout: post
             }); 
 ~~~
 
-  One of the ways to archive it will need the owner provide a server hosting an endpoint to relay the email. This will require the ownership or the access of the server. The cloud functions can help to remove the need of a server. 
+  One of the ways to archive it will need the owner provide a server hosting an endpoint to relay the email. This will require the ownership or the access of the server. The cloud functions can help to remove the need for a server. 
 
  
 ## Azure Function
@@ -136,5 +136,5 @@ it should match the one in output setting of function
 
 ![sendgrid integrate](/images/2017/4/HttpTriggerCSharp.png) 
 
-Now you can replace the URL in the javascript with the function URL and have a full functional contact form.
+Now you can replace the URL in the javascript with the function URL and have a fully functional contact form.
 
