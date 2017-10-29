@@ -17,12 +17,12 @@ layout: post
 
 <!--more-->
 
-Azure Service Fabric provides the developers the flexibility to choose protocols and stacks about communication between services ([doc](https://aka.ms/servicefaricservicecommunication)). One of common choose is using the http or REST, where we can use the http header to carry the correlationId as we did in part1. Another one is taking advantage of WCF as communication stack. We will sort to use the MessageInspector equivalent ServiceRemoteDispather.
+Azure Service Fabric provides the developers the flexibility to choose protocols and stacks about communication between services ([doc](https://aka.ms/servicefaricservicecommunication)). One of common choose is using the HTTP or REST, where we can use the HTTP header to carry the correlationId as we did in part1. Another one is taking advantage of WCF as communication stack. We will sort to use the MessageInspector equivalent ServiceRemoteDispather.
 
 
 ## Server
 
-When we create the service, we can provide a list of communication listener to service to allow it receive intra-service or external calls.
+When we create the service, we can provide a list of communication listener to service to allow it receives intra-service or external calls.
 
 ~~~
    protected override IEnumerable<ServiceReplicaListener> CreateServiceReplicaListeners()
@@ -30,7 +30,7 @@ When we create the service, we can provide a list of communication listener to s
         return new List<ServiceReplicaListener> ();
    }
 ~~~
-On each instance of ServiceReplicaListener, we can create an ICommunicationListenser that will accept a message handlers in which we can manipulate request headers.
+On each instance of ServiceReplicaListener, we can create an ICommunicationListenser that will accept message handlers in which we can manipulate request headers.
 
 ~~~
    protected override IEnumerable<ServiceReplicaListener> CreateServiceReplicaListeners()
@@ -117,7 +117,7 @@ Reliable Service and Reliable Actor have different base class regarding the Remo
 
 ## Client
 
-Now that the service can incept incoming request to inspect the header. We need client to be able include such header. We can use *ServiceProxyFactory* with wrapped *IServiceRemotingClientFactory* and *IServiceRemotingClient* and intercept the service calls.[StackOverflow](http://stackoverflow.com/questions/34166193/how-to-add-message-header-to-the-request-when-using-default-client-of-azure-serv).
+Now that the service can incept incoming request to inspect the header. We need the client to be able to include such header. We can use *ServiceProxyFactory* with wrapped *IServiceRemotingClientFactory* and *IServiceRemotingClient* and intercept the service calls.[StackOverflow](http://stackoverflow.com/questions/34166193/how-to-add-message-header-to-the-request-when-using-default-client-of-azure-serv).
 
 ~~~
   public class ServiceRemotingClientFactoryWrapper : IServiceRemotingClientFactory
@@ -238,10 +238,10 @@ Now that the service can incept incoming request to inspect the header. We need 
     }
 ~~~
 
-Then, proxy can used as 
+Then, proxy can be used as 
 
 ~~~
-        public static async Task<T> GetProxy<T>(string serviceName) where T : IService
+        public static async Task<T> GetProxy<T>(string serviceName) where T: IService
         {
             ServiceUriBuilder builder = new ServiceUriBuilder(serviceName);
             var serviceUri = builder.ToUri();
