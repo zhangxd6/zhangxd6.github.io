@@ -127,7 +127,7 @@ public class Contact
 
 Should I run the test, will I be able to receive the email?
 
-Not quite. The sendGrid need an api key. Now go back the *sendgrid* and navigate to sendgrid account where you can create an API Key.
+Not quite. The sendGrid need an API key. Now go back the *sendgrid* and navigate to sendgrid account where you can create an API Key.
 Now go to the *Application Setting* of azure function to enter API key to *SendGridApiKey*.
 
 ![app setting](/images/2017/4/Application_settings.png) 
