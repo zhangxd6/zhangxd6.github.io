@@ -5,7 +5,6 @@ tags:
 - react-native
 - mobile
 layout: post
-
 ---
 
 I am a fan of Angular. When it comes down to develop mobile applications, I always turn to the ionic framework for the benefit of leveraging my HTML and javascript knowledge. I heard the react framework from Facebook for quite awhile and I was turned off by JSX syntax until recently. I love the promise of virtual dom and immutable state. At the same time, there is a need to build a mobile application for code camp I am volunteering. So I decided to take the challenge to learn the react native and try to take notes during the process. This is the first one: setting up.
