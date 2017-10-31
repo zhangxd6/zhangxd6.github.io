@@ -7,7 +7,7 @@ I am a fan of Angular. When it comes down to develop mobile applications, I alwa
 
 <!--more-->
 
-Preparing the dev environment for react native is a relatively straightforward process by following the Facebook get started documentation at [here](/https://facebook.github.io/react-native/docs/getting-started.html).
+Preparing the dev environment for react-native is a relatively straightforward process by following the Facebook get started documentation at [here](/https://facebook.github.io/react-native/docs/getting-started.html).
 
 Now I need a start point for the project. I could have used the 
 ```
@@ -17,5 +17,9 @@ or
 ```
   react-native-cli
 ```
-as Facebook includes in the documentation.
+as Facebook includes in the documentation. However, my googling gave me another choice 
+```
+   ignite-cli
+```
+It is created by [InfiniteRead](https://github.com/infinitered/ignite) and I like the example app they created for Chain React conference. There are many excellent react-native boilerplate tools. The Ignite is my choice for the job from my brief research.
 
