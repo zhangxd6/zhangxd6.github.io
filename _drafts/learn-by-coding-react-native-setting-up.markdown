@@ -54,5 +54,48 @@ Here it is, the first react-native app running in the iOs simulator.
 
 ## Setup Typesctipt
 
+We will then install the typescript
+```
+  npm install typescript
+```
+it will be very useful to have the lint and react type info as well.
+```
+  npm install --save-dev tslint @types/react-native @types/react
+```
+ Typescript files need to be compiled to javascript before buddled into an application. It is possible to have 
+```
+   tsc -w
+```
+to monitor the ts/tsx file change and compile them before sending them to the packager. It would be nice to have them compiled in place and fit into the dev process. Good news, the react-native provides the hook to specify your own transformer. Better, you can specify **rn-cli.config.js** to configure it[source](http://www.cbrevik.com/easy-typescript-with-react-native/).
+```
+module.exports = {
+  getTransformModulePath () {
+    return require.resolve('react-native-typescript-transformer')
+  },
+  getSourceExts () {
+    return ['ts', 'tsx']
+  }
+}
+```
+then we will need to provide tsconfig.json for tsc comipler 
+```
+{
+    "compilerOptions": {
+        "target": "es2015",
+        "module": "es2015",
+        "jsx": "react-native",
+        "moduleResolution": "node",
+        "allowSyntheticDefaultImports": true,
+        "allowJs": true
+    }
+}
+```
+Finially, as a good programer, a lint can help us to spot the typing errors with help of editor
+
+```
+{
+    "extends": "tslint-config-standard"
+}
+```
 
 
