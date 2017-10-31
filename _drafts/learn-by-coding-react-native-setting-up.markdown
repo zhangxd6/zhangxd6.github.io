@@ -13,7 +13,13 @@ I am a fan of Angular. When it comes down to develop mobile applications, I alwa
 
 Preparing the dev environment for react-native is a relatively straightforward process by following the Facebook get started documentation at [here](/https://facebook.github.io/react-native/docs/getting-started.html).
 
-Now I need a start point for the project. I could have used the 
+Now I need a start point for the project. And my another favorite is the [Typescript](https://www.typescriptlang.org/). I have been using it for my work and really love the static code analysis, the lastest and evolving javascript features and the ability to target the older version of javascript. 
+
+So here are my two requirements 
+* a starter boilerplate
+* the ability to use Typescript
+
+I could have used the 
 ```
   create-react-native-app
 ```
@@ -25,5 +31,28 @@ as Facebook includes in the documentation. However, my googling gave me another 
 ```
    ignite-cli
 ```
-It is created by [InfiniteRead](https://github.com/infinitered/ignite) and I like the example app they created for Chain React conference. There are many excellent react-native boilerplate tools. The Ignite is my choice for the job from my brief research.
+It is created by [InfiniteRead](https://github.com/infinitered/ignite) and I like the example app they created for Chain React conference. There are many excellent react-native boilerplate tools. The Ignite is my choice to create the boilerplate project.
+
+## Create New Project
+
+So Let's bring up the terminal.
+```
+   npm install -g ignite-cli
+```
+This is going to install the ignite globally.
+
+```
+  ignite new MyStarterProject
+```
+Now I have a new react-native project after I answer a couple of questions prompted.
+
+```  
+  cd MyStarterProject
+  react-native run-ios
+```
+Here it is, the first react-native app running in the iOs simulator.
+
+## Setup Typesctipt
+
+
 
