@@ -98,4 +98,6 @@ Finially, as a good programer, a lint can help us to spot the typing errors with
 }
 ```
 
+Here is it, a react-native starter project with the ability of coding in typescript.
+Enjoy coding.
 
