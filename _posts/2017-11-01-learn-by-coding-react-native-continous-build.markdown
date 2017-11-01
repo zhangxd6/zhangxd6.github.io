@@ -11,10 +11,15 @@ tags:
 Nowadays, the continuous integration becomes the best practice of building software. In [last blog ](https://www.zhresearches.com/2017/10/31/learn-by-coding-react-native-setting-up.html), we created the starter react-native project. We will create the continuous integration using Mircosoft Mobile Center.
 <!--more-->
 ##Mircosoft Mobile Center
+
 Visual Studio Mobile Center is to
+
 > Bring your apps written in any language to Visual Studio Mobile Center’s cloud and lifecycle services and you’ll get faster release cycles, higher-quality apps, and the time and data to focus on what users want.
+
 It automates the build, testing, distribution, monitoring, and engagement of mobile application development. 
+
 ##Set up Continuous Build
+
 1. Login in www.mobile.azure.com with your account or you can create one there.
 2. Once login, Click the **Add New** button to chose **Add New App*
 3. You will be asked to fill out Name and OS and we will choose ReactNative as its Platform
