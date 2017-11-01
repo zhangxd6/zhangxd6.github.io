@@ -25,6 +25,7 @@ It automates the build, testing, distribution, monitoring, and engagement of mob
 
 Now you should have your build configured. If your build is configured as 
 >Build this branch on every push
+
 your next check-in will trigger the automatic build. 
 
 Congratulations on your Continous Build!
