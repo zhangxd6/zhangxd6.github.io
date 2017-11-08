@@ -9,12 +9,12 @@ tags:
 layout: post
 ---
 
- Serverless architectures are currently leading the conversations. It is continuing the trend of the industry that is trying to abstract out the complexity of infrastructure from the application developers to allow them to focus on core values they provide, fast time to market and minimize the cost to establish their own IT infrastructure. Three major cloud providers started offering it to the developers; AWS Lambda, Google Cloud function, and Microsoft Azure Function. This post will not try to discuss Pros or Cons of serverless architecture or the comparison of offers providers have. I will try to document the steps to archive a common functionality of a website, sending email from a website accomplished using the Azure function. Hopefully, this will give a peek of the serverless backend. 
+ Serverless architectures are currently leading the conversations. It is continuing the trend of the industry that is trying to abstract out the complexity of infrastructure from the application developers to allow them to focus on core values they provide, fast time to market and minimize the cost to establish their own IT infrastructure. Three major cloud providers started offering it to the developers; AWS Lambda, Google Cloud function, and Microsoft Azure Function. This post will not try to discuss Pros or Cons of serverless architecture or the comparison of offers providers have. I will try to document the steps to archive a common functionality of a website, sending email from a website accomplished using the Azure function. Hopefully, this will give a peek at the serverless backend. 
 <!--more-->
 
 ## Requirement
 
-  I have a client's website and there is a contact section to allow visitor send the email to the owner of a website.
+  I have a client's website, and there is a contact section to allow visitor send the email to the owner of a site.
 
   ![Contact Form](/images/2017/4/form.png) 
 
@@ -37,7 +37,7 @@ layout: post
             }); 
 ~~~
 
-  One of the ways to archive it will need the owner provide a server hosting an endpoint to relay the email. This will require the ownership or the access of the server. The cloud functions can help to remove the need for a server. 
+  One of the ways to archive it will need the owner provide a server hosting an endpoint to relay the email, which will require the ownership or the access of the server. The cloud functions can help to remove the need for a server. 
 
  
 ## Azure Function
@@ -63,7 +63,7 @@ Now let's create a azure functions, Function App,
 
 ![sendgrid function](/images/2017/4/demosendgriddemo.png) 
 
-then click the plus icon alongside with *Functions*. In the template, select *HttpTrigger-CSharp"
+Then click the plus icon alongside *Functions*. In the template, select *HttpTrigger-CSharp*.
 
 Once the function is created, go to the *Integrate*, add a new sendgrid out and remove the HTTP out. It should look similar to
 
