@@ -12,23 +12,23 @@ layout: post
 
 In today's software, a single client request is typically fulfilled by multiple services. In the layered architecture, the call is
 received by presentation or API layer and passed along to business logic layer and eventually to the persistent layer. These layers can
-locate physically on the same server or span across multiple servers. We can produce logs extensively to help us to monitor the call stack in production with help of log aggregators, such as Splunk or azure application insight. However, it is difficult to trace
-how a single request passing along all individual layers. In microservice architecture, this becomes even difficult since the nature
-of it, a great number of services to work together to provide the end user with requested capabilities. A very useful technique is the correlation id. When the entry call is made, a GUID is generated and passed along to all subsequent calls. In this blog, we will document
+locate physically on the same server or span across multiple servers. We can produce logs extensively to help us to monitor the call stack in production with the help of logging aggregators, such as Splunk or azure application insight. However, it is difficult to trace
+how a single request was passing along all individual layers. In microservice architecture, this becomes even difficult since the nature
+of it, a great number of services to work together to provide the end user with requested capabilities. A handy technique is the correlation id. When the entry call is made, a GUID is generated and passed along to all subsequent calls. In this blog, we will document
 how we archive it in ASP.net/WebApi applications.   
 
 <!--more-->
 
 ## Theory
-Web applications implemented with ASP.net or the APIs provided by WebApi generally are receiving requests from web browsers. The 
+Web applications implemented with ASP.net or the APIs provided by WebApi are receiving requests from web browsers. The 
 correlationId can be passed along with every single request originated from browsers, the most case will be from javascript. However,
 the requirement for clients passes it is not realistic when we consider existing applications. Fortunately, it is not a must-have 
 requirement since we are more concern about how the server side handles all requests. If you are trying to accomplish user experience tracking at the front end, you will have to develop a way to uniquely track user interaction at client side and bridge it with correlation
 id passed to the server, which is not the scope here. 
 
-ASP.net MVC or OWIN are built with process pipeline in their requests, therefore, we can take advantage of it to generate a new GUID
+ASP.net MVC or OWIN are built with process pipeline in their requests. Therefore, we can take advantage of it to generate a new GUID
 in the very early stage of the process. We agree to use a custom header "X-correlationId" as a media to carry this GUID. In the process,
-we are going to check if the incoming request has this header. If so, the GUID will be passed along, otherwise, a brand new identifier
+we are going to check if the incoming request has this header. If so, the GUID will be passed along. Otherwise, a brand new identifier
 will be generated and used for subsequent calls.
 
 ## Implementation
@@ -40,8 +40,7 @@ request pipeline and have access to life-cycle events throughout the request.
 `
  
 Because the HttpModule is called on every request, therefore we can inspect and modify headers of each request. And the OWIN hosted
-through asp.net application will go through the same request pipeline, this will work for both cases. However, the downside is the application has to
-be hosted on IIS while developers develop/debug the application.
+through asp.net application will go through the same request pipeline, this will work for both cases. However, the downside is the application has to be hosted on IIS while developers develop/debug the application.
 
 ~~~
 public class Correlation : IHttpModule
