@@ -13,11 +13,11 @@ layout: post
 <!--more-->
 
 ## Theory
-  As previously stated, correlation Id is a useful way to reconstruct the call graph. When the first call is made, a Unique Identifier, GUID, is generated, this GUID is then passed along to subsequent calls, which is put into logs in a structured way via the logging framework provided to a centralized log storage. You then can take advantage of the capabilities, the log management tool (Splunk) to trace the event all the way through your call graph. 
+  As previously stated, correlation Id is a useful way to reconstruct the call graph. When the first call is made, a Unique Identifier, GUID, is generated, this GUID is then passed along to subsequent requests, which is put into logs in a structured way via the logging framework provided to a centralized log storage. You then can take advantage of the capabilities, the log management tool (Splunk) to trace the event all the way through your call graph. 
  
 ### Client:
  
-  When a client initiates a request to WCF service, we will examine if it is an initiating call. If so, a GUID will be generated and add an outgoing header with it. Otherwise, it will reuse the GUID coming from the upstream call.
+  When a client initiates a request to WCF service, we will examine if it is an initiating call. If so, a GUID will be generated and add an outgoing header to it. Otherwise, it will reuse the GUID coming from the upstream call.
  
 ### Server:
  
@@ -25,11 +25,11 @@ layout: post
 
 ## Implementation
 
-How can we generate such GUID implicitly without requiring a lot of efforts on application developers to add it to an existing application or brand new application? The solution we chose is to have a custom header on each WCF calls. The messageInspector, which will inspect the outgoing messages (Client) or incoming messages (Server), can help us to fulfill the requirement.
+How can we generate such GUID implicitly without requiring a lot of efforts on application developers to add it to an existing application or brand new app? The solution we chose is to have a custom header for each WCF calls. The messageInspector, which will inspect the outgoing messages (Client) or incoming messages (Server), can help us to fulfill the requirement.
  
 ### Client
  
-On the client side, we implement the `IClientMessageInspector` to add a header on every outgoing request with GUID. An `IEndpointBehavior` implementation will inject this inspector to the client endpoint and a ` System.ServiceModel.Configuration.BehaviorExtensionElement` is to facilitate it through the configuration files.
+On the client side, we implement the `IClientMessageInspector` to add a header to every outgoing request with GUID. An `IEndpointBehavior` implementation will inject this inspector into the client endpoint and a ` System.ServiceModel.Configuration.BehaviorExtensionElement` is to facilitate it through the configuration files.
  
 ~~~
  internal class ClientMessageInspector : IClientMessageInspector
@@ -164,7 +164,7 @@ On the client side, we implement the `IClientMessageInspector` to add a header o
  
 ### Client
  
- On the client side, there are two options
+ On the client side, there are two options.
  
 #### Using Configuration File **not support .net35**
  
