@@ -25,7 +25,7 @@ It automates the build, testing, distribution, monitoring, and engagement of mob
 
 2. Once login, Click the **Add New** button to chose \**Add New App*
 
-3. You will be asked to fill out Name and OS and we will choose ReactNative as its Platform
+3. You will be asked to fill out Name and OS, and we will choose ReactNative as its Platform
 
 4. Once you confirmed your selection, you will be shown the instruction to add mobile Center to your app.
 
@@ -33,9 +33,9 @@ It automates the build, testing, distribution, monitoring, and engagement of mob
 
 6. Choose where your project source code is. You can select from VSTS, GitHub, and Bitbucket.
 
-7. Continue with steps, you will choose the repository and branch and then build configuration. The default setting will be sufficient.
+7. Continue with steps, and you will choose the repository and branch and then build configuration. The default setting will be sufficient.
 
-Now you should have your build configured. If your build is configured as
+Now you should have your build configured. If your build is set to
 
 > Build this branch on every push
 
