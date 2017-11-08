@@ -36,7 +36,7 @@ we need 3 VMs
     end
 ~~~
 
-that are derived for my base box named *WinServerBase* and provide default user 
+that is derived from my base box named *WinServerBase* and provide default user 
 
 ~~~
         config.vm.box = "WinServerBase"
