@@ -1,6 +1,6 @@
 ---
 title: A developer's wonder garden
-timezone: UTC
+timezone: America/Chicago
 collections:
   posts:
     title: Posts
@@ -12,7 +12,7 @@ email: xzhang@zhresearches.com
 description: 'A home to share my passion.
 
 '
-baseurl: ''
+baseurl: 
 url: https://www.zhresearches.com
 enforce_ssl: www.zhresearches.com
 twitter_username: zhangxd6
