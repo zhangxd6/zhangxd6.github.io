@@ -3,6 +3,11 @@
         top: 60px;
     }
     
+    a>img {
+        width: 100%;
+        height: auto;
+    }
+    
     .hex {
         float: left;
         margin-left: 3px;
