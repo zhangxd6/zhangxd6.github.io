@@ -7,9 +7,9 @@ tags:
 ---
 
 1. Create the Azure service fabric cluster from portal
-2. select the basic on security, where the server certificate will be created by portal and stored in the keyvalut
-3. go to the keyvault and download the generated server certificate to local.
-4. open powershell
+2. select the basic on security, where the server certificate will be created by portal and stored in the key vault
+3. go to the key vault and download the generated server certificate to local.
+4. open PowerShell
 ```
  Get-ChildItem -Path "Cert:\LocalMachine\CA" 
 ``` 
@@ -30,5 +30,3 @@ load the cert to variable $cert
 create client certificate
 5. export the client certificate to local pfx
 6. generate base64 version. [System.Convert]::ToBase64String([System.IO.File]::ReadAllBytes("C:\users\userid\Documents\pandaciclient.pfx")) 
-
-
