@@ -1,6 +1,9 @@
 ---
 title: CD for Azure Service Fabric Application
 date: 2018-02-19 21:06:00 -06:00
+tags:
+- azure service fabric
+- CD
 ---
 
 1. Create a new release
