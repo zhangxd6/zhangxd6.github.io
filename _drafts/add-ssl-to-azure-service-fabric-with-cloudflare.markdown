@@ -7,8 +7,9 @@ tags:
 - cloudflare
 ---
 
-Got idea from 
-https://kvaes.wordpress.com/2016/11/09/azure-a-poor-mans-ssl-termination-by-leveraging-cloudflare/
+Use CloudFlare to add SSL to Azure Service Fabric Application
+
+<!--more-->
 
 
 1. add CNAME(app) to DNS use service fabric DNS name as an alias
@@ -22,3 +23,6 @@ https://kvaes.wordpress.com/2016/11/09/azure-a-poor-mans-ssl-termination-by-leve
 5. Add NSG to service fabric cluster
 ![NSG_-_Microsoft_Azure.png](/uploads/NSG_-_Microsoft_Azure.png)
 6. Add inbound rules to only allow traffic from Cloudflare [](https://www.cloudflare.com/ips-v4)
+
+Credit goes
+https://kvaes.wordpress.com/2016/11/09/azure-a-poor-mans-ssl-termination-by-leveraging-cloudflare/
