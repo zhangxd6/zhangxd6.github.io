@@ -7,6 +7,7 @@ tags:
 ---
 
 1. Create the Azure service fabric cluster from portal
+<!--more-->
 2. select the basic on security, where the server certificate will be created by portal and stored in the key vault
 3. go to the key vault and download the generated server certificate to local.
 4. open PowerShell
