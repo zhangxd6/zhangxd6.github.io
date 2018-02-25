@@ -7,7 +7,7 @@ tags:
 ---
 
 1. Create a new release
-2. select the task 'Deploy Service Fabric Application'
+2. select the task 'Deploy Service Fabric Application
 3. Add new connection
 4. select certificate based
 5. fill in the server certificate thumbprint
