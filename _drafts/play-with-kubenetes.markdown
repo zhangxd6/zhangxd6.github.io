@@ -1,5 +1,5 @@
 ---
-title: Play with Kubenetes
+title: Play with Kubenetes - k8s dashbard
 date: 2018-03-22 19:33:00 -05:00
 tags:
 - docker
