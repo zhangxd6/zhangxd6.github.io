@@ -309,3 +309,5 @@ spec:
         persistentVolumeClaim:
           claimName: wp-pv-claim
 ```
+
+[Credit](https://github.com/yongshin/docker-wordpress)
