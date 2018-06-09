@@ -40,3 +40,30 @@ Vagrant.configure(2) do |config|
   end
 end
 ```
+
+## Install docker 
+
+
+```
+sudo apt-get remove docker docker-engine docker-ce docker.io
+
+DOCKER_EE_URL="YOUR DOCKER EE URL"
+
+curl -fsSL "${DOCKER_EE_URL}/ubuntu/gpg" | sudo apt-key add -
+
+sudo add-apt-repository \
+   "deb [arch=amd64] $DOCKER_EE_URL/ubuntu \
+   $(lsb_release -cs) \
+   stable-17.06"
+
+sudo apt-get update
+
+sudo apt-get install -y \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    software-properties-common \
+    docker-ee
+
+
+```
