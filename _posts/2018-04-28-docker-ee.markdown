@@ -12,7 +12,7 @@ tags:
 ## Create local cluster via Vagrant
 
 We will create a there node cluster, 1 manager and 2 worker node
-
+<!--more-->
 ```
 manager_ip = "10.0.3.2"
 
