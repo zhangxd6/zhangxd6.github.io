@@ -142,7 +142,7 @@ kubectl apply -f mysql-demo.yaml
 kubectl apply -f wordpress-demo.yaml
 ```
 
-
+mysql-demo.yml
 ```
 apiVersion: v1
 kind: Service
@@ -225,6 +225,7 @@ spec:
           claimName: mysql-pv-claim
 ```
 
+wordpress-demo.yml
 ```
 apiVersion: v1
 kind: Service
