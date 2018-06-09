@@ -3,6 +3,9 @@ title: Play with Docker EE
 date: 2018-04-28 11:39:00 -05:00
 tags:
 - docker EE
+- kubernetes
+- swarm
+- docker
 ---
 
 
