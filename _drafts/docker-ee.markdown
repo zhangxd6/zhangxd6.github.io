@@ -43,6 +43,8 @@ end
 
 ## Install docker 
 
+### Docker trial
+### Install script
 
 ```
 sudo apt-get remove docker docker-engine docker-ce docker.io
@@ -64,6 +66,69 @@ sudo apt-get install -y \
     curl \
     software-properties-common \
     docker-ee
+```
 
+## Set up UCP
 
+On manager node 
+```
+sudo docker run --rm -it --name ucp -v /var/run/docker.sock:/var/run/docker.sock docker/ucp install --host-address 10.0.3.2 --interactive --force-minimums
+```
+
+Once success, you should be able to access UCP web portal
+
+## Add workers
+1. login to UCP web interface
+2. Click add node
+3. copy and paste the command to the console of worker
+
+## Deploy WordPress to swarm
+1. Share resource
+2. Stacks
+3. Create Stack
+4. select swarm 
+5 paste docker-compose.yml 
+```
+version: '3.1'
+
+services:
+  app:
+    image: wordpress
+    deploy:
+      replicas: 3
+      labels:
+        com.docker.lb.hosts: "WORDPRESS.Local"
+        com.docker.lb.port: 80
+    environment:
+      - "WORDPRESS_DB_HOST=mariadb:3306"
+      - "WORDPRESS_DB_USER=wordpress"
+      - "WORDPRESS_DB_PASSWORD=wordpress"
+    ports:
+      - 80
+    networks:
+      - wordpress-network
+
+  mariadb:
+    image: mariadb
+    deploy:
+      replicas: 1
+    environment:
+      - "MYSQL_ROOT_PASSWORD=wordpress"
+      - "MYSQL_DATABASE=wordpress"
+      - "MYSQL_USER=wordpress"
+      - "MYSQL_PASSWORD=wordpress"
+    networks:
+      - wordpress-network
+    volumes:
+     - db:/data/db
+
+volumes:
+  db:
+    driver: local
+
+networks:
+  wordpress-network:
+    driver: overlay
+  ucp-hrm:
+    external: true
 ```
