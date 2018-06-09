@@ -1,9 +1,15 @@
 ---
-title: Docker EE
+title: Play with Docker EE
 date: 2018-04-28 11:39:00 -05:00
+tags:
+- docker EE
 ---
 
-local cluster via Vagrant
+
+## Create local cluster via Vagrant
+
+We will create a there node cluster, 1 manager and 2 worker node
+
 ```
 manager_ip = "10.0.3.2"
 
@@ -15,8 +21,8 @@ Vagrant.configure(2) do |config|
     manager.vm.network "private_network", ip: manager_ip
 
     manager.vm.provider "virtualbox" do |v|
-      v.cpus = 1
-      v.memory = 512
+      v.cpus = 2
+      v.memory = 4096
     end
   end
 
@@ -28,7 +34,7 @@ Vagrant.configure(2) do |config|
 
       worker.vm.provider "virtualbox" do |v|
         v.cpus = 1
-        v.memory = 512
+        v.memory = 1024
       end
     end
   end
