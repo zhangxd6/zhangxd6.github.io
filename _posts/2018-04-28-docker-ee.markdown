@@ -12,7 +12,9 @@ tags:
 ## Create local cluster via Vagrant
 
 We will create a there node cluster, 1 manager and 2 worker node
+
 <!--more-->
+
 ```
 manager_ip = "10.0.3.2"
 
@@ -74,6 +76,7 @@ sudo apt-get install -y \
 ## Set up UCP
 
 On manager node 
+
 ```
 sudo docker run --rm -it --name ucp -v /var/run/docker.sock:/var/run/docker.sock docker/ucp install --host-address 10.0.3.2 --interactive --force-minimums
 ```
@@ -91,6 +94,8 @@ Once success, you should be able to access UCP web portal
 3. Create Stack
 4. select swarm 
 5 paste docker-compose.yml 
+
+
 ```
 version: '3.1'
 
@@ -135,9 +140,11 @@ networks:
   ucp-hrm:
     external: true
 ```
+
 ## Docker cli pack
 
 ## Deploy wordpress k8s
+
 ```
 # Create MySQL root password as Kubernetes secret
 kubectl create secret generic mysql-root-password -n default --from-literal="password=wordpress"
@@ -146,6 +153,7 @@ kubectl apply -f wordpress-demo.yaml
 ```
 
 mysql-demo.yml
+
 ```
 apiVersion: v1
 kind: Service
@@ -229,6 +237,7 @@ spec:
 ```
 
 wordpress-demo.yml
+
 ```
 apiVersion: v1
 kind: Service
