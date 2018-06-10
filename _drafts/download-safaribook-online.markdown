@@ -10,8 +10,8 @@ https://github.com/ViciousPotato/safaribooks
 
 This should work no matter platform you're on as no dependencies other than docker needs to be installed.
 
-Run docker build -t safaribooks .
+Run docker build -t safaribook:latest .
 
-Run docker run -it --rm -v $(pwd)/converted:/app/converted safaribooks -u USER/EMAIL -p PASSWORD -b BOOK_ID download and wait for it to complete
+Run docker run -it --rm -v $(pwd)/converted:/app/converted safaribook:latest -u USER/EMAIL -p PASSWORD -b BOOK_ID download and wait for it to complete
 
 The .epub and .mobi should now be in the folder converted of your current working directory.
