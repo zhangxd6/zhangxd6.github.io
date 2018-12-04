@@ -5,6 +5,7 @@ tags:
 - kubernetes
 - container
 - orachestration
+layout: post
 ---
 
 More and more applications start to adopt container technologies to help development and operation of software on physical or virtual infrastructures. It is crucial to managing containers and connecting them to customers for tasks like scheduling, load balancing, and distribution. The orchestration tools like kubernetes and swarm become necessary.
