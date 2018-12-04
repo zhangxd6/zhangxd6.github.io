@@ -1,11 +1,12 @@
 ---
 title: 'Learn by coding: React-Native - Continous Build'
-date: 2017-11-01 18:11:00 Z
+date: 2017-11-01 13:11:00 -05:00
 tags:
 - react-native
 - mobile
 - mobile center
 - continuous integration
+layout: post
 ---
 
 Nowadays, the continuous integration becomes the best practice of building software. In [last blog ](https://www.zhresearches.com/2017/10/31/learn-by-coding-react-native-setting-up.html), we created the starter react-native project. We will create the continuous integration using Mircosoft Mobile Center.
