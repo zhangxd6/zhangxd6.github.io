@@ -5,6 +5,7 @@ tags:
 - azure service fabric
 - ssl
 - cloudflare
+layout: post
 ---
 
 Use CloudFlare to add SSL to Azure Service Fabric Application
