@@ -8,5 +8,6 @@ tags:
 - Docker
 - ASP.Net Core
 - MircorServices
+layout: post
 ---
 
