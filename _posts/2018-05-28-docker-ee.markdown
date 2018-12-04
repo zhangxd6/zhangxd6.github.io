@@ -6,6 +6,7 @@ tags:
 - kubernetes
 - swarm
 - docker
+layout: post
 ---
 
 
