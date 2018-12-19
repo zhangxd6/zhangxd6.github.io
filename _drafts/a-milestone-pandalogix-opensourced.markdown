@@ -11,5 +11,5 @@ tags:
 layout: post
 ---
 
-
---more--
+Today, I am thrilled to announce to open source my side project, pandalogix. Pandalogix is my attempt to provide mediocre and advanced technology aware users a initivtive 
+<!--more-->
