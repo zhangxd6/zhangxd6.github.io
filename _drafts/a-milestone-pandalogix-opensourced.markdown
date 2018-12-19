@@ -11,5 +11,5 @@ tags:
 layout: post
 ---
 
-Today, I am thrilled to announce to open source my side project, [Pandalogix](https://github.com/pandalogix/pandalogix). Pandalogix is my attempt to provide mediocre and advanced technology aware users an intuitive way to build complex logic responding the trigger data.
+Today, I am thrilled to announce to open source my side project, [Pandalogix](https://www.pandalogix.com). Pandalogix is my attempt to provide mediocre and advanced technology aware users an intuitive way to build complex logic responding the trigger data.
 <!--more-->
