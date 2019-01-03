@@ -7,7 +7,7 @@ tags:
 ---
 
 
-<--more-->
+<!--more-->
 # 5bday instruction
 https://github.com/dockersamples/docker-fifth-birthday/blob/master/kubernetes-desktop.md
 
