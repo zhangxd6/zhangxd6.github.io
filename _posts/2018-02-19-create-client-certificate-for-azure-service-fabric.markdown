@@ -4,6 +4,7 @@ date: 2018-02-19 20:52:00 -06:00
 tags:
 - azure service fabric
 - certificate
+layout: post
 ---
 
 1. Create the Azure service fabric cluster from portal
