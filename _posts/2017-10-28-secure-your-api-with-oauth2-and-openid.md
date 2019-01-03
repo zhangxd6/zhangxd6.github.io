@@ -1,6 +1,6 @@
 ---
 title: secure your webapi with oauth2 and openid using identityserver3
-date: 2017-10-28 21:51:00 Z
+date: 2017-10-28 16:51:00 -05:00
 tags:
 - oauth
 - webapi
