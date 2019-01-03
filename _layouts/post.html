@@ -10,7 +10,7 @@
 
         <span class="label label-info">{{ tag }}</span> {% endfor %}
     </div>
-    {% if page.comments == 'true' %}
+    {% if page.comments == true %}
     {% include disqus.html %}
     {% endif %}
 </div>
