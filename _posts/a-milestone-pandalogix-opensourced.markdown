@@ -1,15 +1,5 @@
 ---
-title: Let's do it - Pandalogix OpenSourced!
-date: 2018-12-21 08:51:00 -06:00
-categories:
-- OOS
-tags:
-- OSS
-- Docker
-- ASP.Net Core
-- MircorServices
-layout: post
-comments:true
+title: 2018 12 21 A Milestone Pandalogix Opensourced
 ---
 
 Today, I am thrilled to announce to open source my side project, [Pandalogix](https://www.pandalogix.com). Pandalogix is my attempt to provide mediocre and advanced technology aware users an intuitive way to build complex logic responding the trigger data.
