@@ -23,4 +23,8 @@ I am teaching myself the docker for a whole and involving the docker community a
 
 I am trying to organize the material I will use to prepare the test in the series so that it will not only help me for the test but hopefully help other potential test takers.
 
+# How am I going to go through the material
+
+I will be using official documentation and [docker deep dive book](https://www.amazon.com/Docker-Deep-Dive-Nigel-Poulton-ebook/dp/B01LXWQUFF) together with [docker certified associate study guide](https://prismic-io.s3.amazonaws.com/docker%2F8fb020bf-fe21-409c-ba02-7e0fd18276d5_dca+study+guide+v1.0.pdf) and [Prepare Guide](https://github.com/DevOps-Academy-Org/dca-prep-guide) to cover all test domains.
+
 
