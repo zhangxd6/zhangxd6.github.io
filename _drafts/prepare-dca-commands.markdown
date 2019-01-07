@@ -1,0 +1,15 @@
+---
+title: Prepare DCA  - Commands
+date: 2019-01-07 15:12:00 -06:00
+---
+
+<!--more-->
+# Engine
+```
+docker system 
+df -disk usage 
+events - real-time event 
+info - system-wide info
+prune - remove unused data - all stopped container, unsued network dangling images and cache.
+```
+[system](https://docs.docker.com/edge/engine/reference/commandline/system/)
