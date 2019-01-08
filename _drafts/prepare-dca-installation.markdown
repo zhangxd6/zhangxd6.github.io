@@ -20,3 +20,17 @@ date: 2019-01-08 13:52:00 -06:00
    Install-Module DockerMsftProvider -Force
    Install-Package Docker -ProviderName DockerMsftProvider -Force
 ```
+# Update Linux
+```
+   sudo apt-get update
+   sudo apt-get remove docker docker-engine docker-ce docker.io -y
+   wget -q0 https://get.docker.com |sh
+   systemctl enable docker
+```
+
+#update window server
+```
+uninstall-module DockerMsftProvider -Force
+install-module DockerMsftProvider -Force
+install-package docker -providername dockermsftprovider -Update -force
+```
