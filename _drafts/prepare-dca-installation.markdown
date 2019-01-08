@@ -34,3 +34,13 @@ uninstall-module DockerMsftProvider -Force
 install-module DockerMsftProvider -Force
 install-package docker -providername dockermsftprovider -Update -force
 ```
+
+#storage diriver
+##Linux 
+* autofs
+* overlay2
+* devicemapper 
+* others
+##Windows
+* widnowsfilter
+* lcow
