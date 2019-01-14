@@ -13,3 +13,12 @@ info - system-wide info
 prune - remove unused data - all stopped container, unsued network dangling images and cache.
 ```
 [system](https://docs.docker.com/edge/engine/reference/commandline/system/)
+
+#Image
+```
+  docker image ls --digests // see SHA256 of images
+  docker image ls --filter reference="*:latest"
+  docker image ls --filter dangling=true
+  docker inspect
+  docker 
+```
