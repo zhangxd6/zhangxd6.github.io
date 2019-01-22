@@ -45,6 +45,35 @@ In general, you should use volumes where possible. Bind mounts are appropriate f
 * tmpfs mounts are best used for cases when you do not want the data to persist either on the host machine or within the container. This may be for security reasons or to protect the performance of the container when your application needs to write a large volume of non-persistent state data.
 
 
+# command
+
+```
+ docker volume create
+ docker volume rm
+ docker volume prune
+ docker volume inspect
+```
+
+## flag -v or --mount 
+
+Originally, the -v or --volume flag was used for standalone containers and the --mount flag was used for swarm services. However, starting with Docker 17.06, you can also use --mount with standalone containers. In general, --mount is more explicit and verbose. The biggest difference is that the -v syntax combines all the options together in one field, while the --mount syntax separates them. Here is a comparison of the syntax for each flag.
+
+New users should try --mount syntax which is simpler than --volume syntax.
+If you need to specify volume driver options, you must use --mount.
+
+-v or --volume: Consists of three fields, separated by colon characters (:). The fields must be in the correct order, and the meaning of each field is not immediately obvious.
+* In the case of named volumes, the first field is the name of the volume and is unique on a given host machine. For anonymous volumes, the first field is omitted.
+* The second field is the path where the file or directory are mounted in the container.
+* The third field is optional and is a comma-separated list of options, such as ro. These options are discussed below.
+
+--mount: Consists of multiple key-value pairs, separated by commas and each consisting of a <key>=<value> tuple. The --mount syntax is more verbose than -v or --volume, but the order of the keys is not significant, and the value of the flag is easier to understand.
+* The type of the mount, which can be bind, volume, or tmpfs. This topic discusses volumes, so the type is always volume.
+* The source of the mount. For named volumes, this is the name of the volume. For anonymous volumes, this field is omitted. May be specified as source or src.
+* The destination takes as its value the path where the file or directory is mounted in the container. May be specified as destination, dst, or target.
+* The readonly option, if present, causes the bind mount to be mounted into the container as read-only.
+* The volume-opt option, which can be specified more than once, takes a key-value pair consisting of the option name and its value.
+
+
 #storage diriver
 ##Linux 
 * autofs
