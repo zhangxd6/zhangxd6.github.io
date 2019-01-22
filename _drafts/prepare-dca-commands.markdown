@@ -22,3 +22,8 @@ prune - remove unused data - all stopped container, unsued network dangling imag
   docker inspect
   docker 
 ```
+
+# container
+```
+  docker run --restart alway/unless-stopped/on-failed
+```
