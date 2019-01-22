@@ -73,6 +73,11 @@ If you need to specify volume driver options, you must use --mount.
 * The readonly option, if present, causes the bind mount to be mounted into the container as read-only.
 * The volume-opt option, which can be specified more than once, takes a key-value pair consisting of the option name and its value.
 
+# Storage and Layer
+
+* layer
+* size and virtual size
+* copy on write
 
 #storage diriver
 ##Linux 
