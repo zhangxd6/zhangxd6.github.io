@@ -27,3 +27,13 @@ prune - remove unused data - all stopped container, unsued network dangling imag
 ```
   docker run --restart alway/unless-stopped/on-failed
 ```
+
+# docker-compose
+```
+ docker-compose up -d
+ docker-compose down
+ docker-compose ps
+ docker-compose top
+ docker-compose stop
+ docker-compose restart
+```
