@@ -12,10 +12,10 @@ Dockerfile/Compose instructions
 
 ## TopLevel
 
-* version
-* services
-* networks
-* volumes
+* version - version of compose file format
+* services - define application services
+* networks - create new networks;default bridge network
+* volumes - create new volume
 
 * secrets
-* configs
+* configs - 
