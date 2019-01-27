@@ -8,3 +8,14 @@ Dockerfile/Compose instructions
 # Dockerfile
 
 # Compose
+ the default name for the compose YAML file is docker-compose.yml. -f flag can be used for custom filename
+
+## TopLevel
+
+* version
+* services
+* networks
+* volumes
+
+* secrets
+* configs
