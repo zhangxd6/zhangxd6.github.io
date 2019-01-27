@@ -18,4 +18,11 @@ Dockerfile/Compose instructions
 * volumes - create new volume
 
 * secrets
-* configs - 
+* configs 
+
+## services
+ * build - Dockerfile location
+ * command - main app of container
+ * ports - host/container port mapping
+ * networks - application attach to which network
+ * volumne - mount volumne to container
