@@ -36,3 +36,17 @@ install-module DockerMsftProvider -Force
 install-package docker -providername dockermsftprovider -Update -force
 ```
 
+# docker-compose
+
+## window
+```
+ invoke-webrequest "https://github.com/docker/compose/releases/download/1.18.0/docker-compose-windows-x86_64.exe" -UserBasicParsing -Outfile $Env:ProgramFiles\docker\docker-compose.exe
+```
+
+## linux
+
+```
+  curl -L "https://github.com/docker/compose/releases/download/1.18.0/docker-compose-`uname -s`-`usname -m` -o /usr/local/bin/docker-compose
+
+chmod +x /usr/local/bin/docker-compose
+```
