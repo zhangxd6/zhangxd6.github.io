@@ -10,7 +10,7 @@ date: 2019-01-08 13:52:00 -06:00
 # Docker for Mac
 # Docker for Linux
  ```
-  wget -qO https://get.docker.com |sh
+  wget -qO- https://get.docker.com |sh
  ```
   ## add user to docker group
 ```
