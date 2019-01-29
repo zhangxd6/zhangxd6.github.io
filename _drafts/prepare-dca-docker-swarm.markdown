@@ -25,3 +25,25 @@ Docker Swarn is an enterprise-grade secure cluster of docker hosts and an engine
   * 2377/tcp - secure client to daemon communication
   * 7946/tcp and 7946/udp - control plane gossip
   * 4789/udp VXLAN based overlay network
+
+# Swarm HA
+lead-follower; followers proxy the request to the leader.
+1. The odd number of managers
+2. Don't have too many managers(3-5)
+
+# Security
+
+old manager rejoin can pose security concern since it will decrypt all configurations and logs.
+
+```
+  docker swarm init --autolock
+  docker swarm update --autolock=true
+```
+this can ask to unlock key before manager joins the cluster.
+
+# service 
+
+* service mode
+  1. replicated (default) - distribute them evenly
+  2 global (--mode global) - a single replica on every node.
+
