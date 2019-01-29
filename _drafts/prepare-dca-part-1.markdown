@@ -17,7 +17,7 @@ One of my new year resolutions is to take a docker certified associate test in e
 
 # Why am I taking the test
 
-I am teaching myself the docker for a whole and involving the docker community as a docker community leader for Mobile AL docker meetup for more than a year. I felt that I need to validate my knowledge of docker platform which will help me contribute to the community better.
+I am teaching myself the docker for a while and involving the docker community as a docker community leader for Mobile AL docker meetup for more than a year. I felt that I need to validate my knowledge of docker platform which will help me contribute to the community better.
 
 # What is the blog series about
 
