@@ -1,6 +1,9 @@
 ---
 title: Prepare DCA Note - Storage
 date: 2019-01-21 21:22:00 -06:00
+tags:
+- docker
+layout: post
 ---
 
 By default, all files created inside a container are stored on a writable container layer. 
