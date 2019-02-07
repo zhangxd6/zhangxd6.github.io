@@ -1,5 +1,5 @@
 ---
-title: Prepare DCA - Docker Swarm
+title: Prepare DCA Note - Docker Swarm
 date: 2019-01-27 15:27:00 -06:00
 ---
 
