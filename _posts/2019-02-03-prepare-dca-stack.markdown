@@ -1,5 +1,5 @@
 ---
-title: Prepare DCA - Stack
+title: Prepare DCA Note - Stack
 date: 2019-02-03 15:02:00 -06:00
 ---
 
