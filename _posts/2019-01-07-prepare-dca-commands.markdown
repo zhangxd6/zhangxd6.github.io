@@ -1,6 +1,9 @@
 ---
 title: Prepare DCA Note  - Commands
 date: 2019-01-07 15:12:00 -06:00
+tags:
+- docker
+layout: post
 ---
 
 <!--more-->
