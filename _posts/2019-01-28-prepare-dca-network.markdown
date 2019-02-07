@@ -1,6 +1,9 @@
 ---
 title: Prepare DCA Note - Network
 date: 2019-01-28 22:05:00 -06:00
+tags:
+- docker
+layout: post
 ---
 
 Docker network is based on Container Network Model where libnetwork is docker's implementation. It provides single-host bridge network, multi-host overlays, options for plugging into existing VLAN, Service discovery and basic container load balancing.
