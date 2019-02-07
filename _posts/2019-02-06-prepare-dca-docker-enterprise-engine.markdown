@@ -1,6 +1,9 @@
 ---
 title: Prepare DCA Note - Docker Enterprise Engine
 date: 2019-02-06 21:56:00 -06:00
+tags:
+- Docker
+layout: post
 ---
 
 Docker EE is docker for the enterprise. It is a suit of products.
