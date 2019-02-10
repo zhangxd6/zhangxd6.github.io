@@ -42,7 +42,7 @@ old manager rejoin can pose security concern since it will decrypt all configura
   docker swarm init --autolock
   docker swarm update --autolock=true
 ```
-this can ask to unlock key before manager joins the cluster.
+this can ask to unlock key before the manager joins the cluster.
 
 # service 
 
