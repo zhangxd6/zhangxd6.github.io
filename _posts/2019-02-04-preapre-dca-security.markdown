@@ -51,3 +51,8 @@ Security is all about layers.
 ```
 docker service create
 ```
+# Secure client and daemon communication
+1. create CA private key and public key (certificate)
+2. Create daemon and client key pair
+3. configure daemon by updating daemon.json plus have daemon key pair and CA cerificate 
+4. configure client by having client key pair and CA cerificate and enviriment varible  DOCKER_HOST AND DOCKER_TLS_VERIFY=1
