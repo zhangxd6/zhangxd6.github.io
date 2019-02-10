@@ -6,9 +6,9 @@ tags:
 layout: post
 ---
 
-Docker EE is docker for the enterprise. It is a suit of products.
+Docker EE is docker for the enterprise. It is a suite of products.
 <!--more-->
-# Compoents
+# Components
   * DTR - secure on-premise Registry
   * Docker Universal Control Plane - Enterprise-grade Operation UI
   * Docker EE - certified container engine
@@ -79,8 +79,8 @@ rm -r /var/lib/docker/swarm
 ## Docker Content Trust
 ## Configuring/Using Docker Trusted Regristry
 ## Image Promotions
-  * build policy-based atutomated pipelines to promote images through a set of repositories in DTR
+  * build policy-based automated pipelines to promote images through a set of repositories in DTR
 ## HTTP Routing Mesh
   * layer-7 routing
-  * allow multiple swarm services to be published on the same swarm-wide port, with ingress traffic being routed to the right service based on hostname data stored in the http header.
+  * allow multiple swarm services to be published on the same swarm-wide port, with ingress traffic being routed to the right service based on hostname data stored in the HTTP header.
 
