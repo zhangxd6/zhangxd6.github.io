@@ -6,7 +6,7 @@ tags:
 layout: post
 ---
 
-Docker network is based on Container Network Model where libnetwork is docker's implementation. It provides single-host bridge network, multi-host overlays, options for plugging into existing VLAN, Service discovery and basic container load balancing.
+Docker network is based on the Container Network Model where libnetwork is docker's implementation. It provides single-host bridge network, multi-host overlays, options for plugging into existing VLAN, Service discovery and basic container load balancing.
 <!--more-->
 
 # CNM
@@ -17,7 +17,7 @@ Three build blocks
 
 #libnetwork
 * docker implementation and more 
-* service discovery, ingress load balance, network control and management plane
+* service discovery, ingress load balance, network control, and management plane
 
 # driver
 data plane
