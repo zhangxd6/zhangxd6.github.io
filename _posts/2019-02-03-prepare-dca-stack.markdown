@@ -6,10 +6,10 @@ tags:
 layout: post
 ---
 
-Docker stack simplify the application managment by providing: desired state, rolling updates, simple, scaling operation, health checks.
+Docker stack simplifies the application management by providing: desired state, rolling updates, simple, scaling operation, health checks.
 <!--more-->
 #Simple Process
- Define app in Composefile and deploy and manage it with 
+ Define app in Compose file and deploy and manage it with 
 ```
   docker stack deploy
 ```
