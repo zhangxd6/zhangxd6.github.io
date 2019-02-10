@@ -8,7 +8,7 @@ comments: true
 layout: post
 ---
 
-One of my new year resolutions is to take a docker certified associate test in early 2019. I will be writing a series blogs as I prepare the test. This is the first part that gives my rationale behind this.
+One of my new year resolutions is to take a docker certified associate test in early 2019. I will be writing a series of blogs as I prepare the test. This is the first part that gives my rationale behind this.
 <!--more-->
 # What is DCA
 
@@ -17,7 +17,7 @@ One of my new year resolutions is to take a docker certified associate test in e
 
 # Why am I taking the test
 
-I am teaching myself the docker for a while and involving the docker community as a docker community leader for Mobile AL docker meetup for more than a year. I felt that I need to validate my knowledge of docker platform which will help me contribute to the community better.
+I am teaching myself the docker for a while and involving the docker community as a docker community leader for Mobile AL docker meetup for more than a year. I felt that I need to validate my knowledge of the docker platform which will help me contribute to the community better.
 
 # What is the blog series about
 
