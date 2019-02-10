@@ -67,3 +67,20 @@ rm -r /var/lib/docker/swarm
  docker container run --rm -i --name ucp -v /var/lib/docker.sock:/var/lib/docker.sock docker/ucp:2.2.5 restore --passphrase ""<ucp.bkp
 ```
 # Docker Trusted Registry 
+
+# Enterprise-grade features
+
+## Role-based access control
+  * grant
+    - Subject - one or more users/team
+    - role - a set of permissions
+    - collection - the resources the permissions apply to
+## Active Directory Integration
+## Docker Content Trust
+## Configuring/Using Docker Trusted Regristry
+## Image Promotions
+  * build policy-based atutomated pipelines to promote images through a set of repositories in DTR
+## HTTP Routing Mesh
+  * layer-7 routing
+  * allow multiple swarm services to be published on the same swarm-wide port, with ingress traffic being routed to the right service based on hostname data stored in the http header.
+
