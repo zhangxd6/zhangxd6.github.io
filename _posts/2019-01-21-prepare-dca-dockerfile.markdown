@@ -17,8 +17,8 @@ Dockerfile/Compose instructions
 
 * version - version of compose file format
 * services - define application services
-* networks - create new networks;default bridge network
-* volumes - create new volume
+* networks - create new networks; default bridge network
+* volumes - create a new volume
 
 * secrets
 * configs 
