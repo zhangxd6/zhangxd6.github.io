@@ -14,3 +14,20 @@ Docker stack simplifies the application management by providing: desired state, 
   docker stack deploy
   cat docker-compose.yml | docker stack deploy --compose-file - vossibility
 ```
+
+# filtering
+ * id/ID (--filter id=7be5ei6sqeye, or --filter ID=7be5ei6sqeye)
+ * label (--filter label=key=value)
+ * model (--filter mode=replicated, or --filter mode=global)
+ * name  (--filter name=myapp_web)
+ * node (--filter node=mynode)
+ * service (--filter service=web)
+
+# format
+|Placeholder|	Description|
+|---|---|
+|.ID	|Service ID|
+|.Name	|Service name|
+|.Mode	|Service mode (replicated, global)|
+|.Replicas	|Service replicas|
+|.Image	|Service image|
