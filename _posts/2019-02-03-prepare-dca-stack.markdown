@@ -24,6 +24,7 @@ Docker stack simplifies the application management by providing: desired state, 
  * service (--filter service=web)
 
 # format
+
 |Placeholder|	Description|
 |---|---|
 |.ID	|Service ID|
