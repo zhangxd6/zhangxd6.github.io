@@ -58,3 +58,13 @@ this can ask to unlock key before the manager joins the cluster.
   1. replicated (default) - distribute them evenly
   2 global (--mode global) - a single replica on every node.-- can't scale 
 
+* service port
+
+```
+  docker service create --name name --publish published=8080,target=80 (routing mesh)
+
+ docker service create --name name --publish published=8080,target=80,mode=host (Node)
+
+ docker service create --name name --publish published=8080,target=80,mode=host --mode global (every node)
+
+```
