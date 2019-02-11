@@ -33,3 +33,7 @@ Docker stack simplifies the application management by providing: desired state, 
 |.Mode	|Service mode (replicated, global)|
 |.Replicas	|Service replicas|
 |.Image	|Service image|
+
+```
+docker stack services --format "{{.ID}}: {{.Mode}} {{.Replicas}}"
+```
