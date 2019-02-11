@@ -12,5 +12,5 @@ Docker stack simplifies the application management by providing: desired state, 
  Define app in Compose file and deploy and manage it with 
 ```
   docker stack deploy
+  cat docker-compose.yml | docker stack deploy --compose-file - vossibility
 ```
-
