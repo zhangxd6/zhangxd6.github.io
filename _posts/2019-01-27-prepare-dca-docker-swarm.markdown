@@ -47,6 +47,10 @@ old manager rejoin can pose security concern since it will decrypt all configura
 this can ask to unlock key before the manager joins the cluster.
 
 # service 
+```
+  docker service create --replicas 1 --name ''
+  docker service ls
+```
 
 * service mode
   1. replicated (default) - distribute them evenly
