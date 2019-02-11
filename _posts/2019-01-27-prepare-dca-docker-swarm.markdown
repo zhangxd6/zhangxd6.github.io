@@ -50,9 +50,11 @@ this can ask to unlock key before the manager joins the cluster.
 ```
   docker service create --replicas 1 --name ''
   docker service ls
+  docker service scale servicename=#
+  docker service update --replicas=# servicename
 ```
 
 * service mode
   1. replicated (default) - distribute them evenly
-  2 global (--mode global) - a single replica on every node.
+  2 global (--mode global) - a single replica on every node.-- can't scale 
 
