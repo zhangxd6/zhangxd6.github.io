@@ -45,7 +45,7 @@ Since the separated products will be managed by the same team, we use **project*
 
 Now we are having
 
-```
+```bash
 |-- package.json
 |-- projects
     |-- product1
