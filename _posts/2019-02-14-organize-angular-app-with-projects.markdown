@@ -47,12 +47,8 @@ Now we are having
 
 ~~~
 |-- package.json
-
 |-- projects
-
-|   |-- product1
-
-|   |-- product2
-
-|   |-- shared library
+    |-- product1
+    |-- product2
+    |-- shared library
 ~~~
