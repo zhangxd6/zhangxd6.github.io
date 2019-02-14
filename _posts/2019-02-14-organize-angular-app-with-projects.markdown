@@ -20,7 +20,7 @@ We have an angular (7) application designed to take advantage of modules and laz
 
 The application used modules to encapsulate the functionalities to a particular product and grouped all shared components, services, utilities into shared modules. The routing will help the application decide which module is going to load during the runtime by lazy loading.
 
-```bash
+```sh
 |-- package.json
 |-- src
     |-- app
@@ -45,7 +45,7 @@ Since the separated products will be managed by the same team, we use **project*
 
 Now we are having
 
-```bash
+```sh
 |-- package.json
 |-- projects
     |-- product1
