@@ -22,12 +22,19 @@ The application used modules to encapsulate the functionalities to a particular 
 
 ```
 -- package.json
+
 -- src
+
    ---- app
+
     ------ module 1 (functional group/product1)
+
     ------ module 2 (functional group/product2)
+
     ------ shared module
+
     ------ asset
+
    ---- configs
 ```
 
