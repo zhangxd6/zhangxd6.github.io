@@ -20,7 +20,7 @@ We have an angular (7) application designed to take advantage of modules and laz
 
 The application used modules to encapsulate the functionalities to a particular product and grouped all shared components, services, utilities into shared modules. The routing will help the application decide which module is going to load during the runtime by lazy loading.
 
-```sh
+
 |-- package.json
 |-- src
     |-- app
@@ -29,13 +29,13 @@ The application used modules to encapsulate the functionalities to a particular 
         |-- shared module
         |-- asset
         |-- configs
-```
+
 
 ## Updated structure
 
 Since the separated products will be managed by the same team, we use **project** and **library** to reorganize the application (we will refer it as a workspace to align some terminologies in angular).
 
-> [Project](https://angular.io/guide/glossary#project)]
+> [Project](https://angular.io/guide/glossary#project)
 > In Angular, a folder within a workspace that contains an Angular app or library. A workspace can contain multiple projects. All apps in a workspace can use libraries in the same workspace.
 
 > [Library](!https://angular.io/guide/libraries)
@@ -45,10 +45,10 @@ Since the separated products will be managed by the same team, we use **project*
 
 Now we are having
 
-```sh
+
 |-- package.json
 |-- projects
     |-- product1
     |-- product2
     |-- shared library
-```
+
