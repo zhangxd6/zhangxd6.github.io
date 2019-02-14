@@ -21,22 +21,14 @@ We have an angular (7) application designed to take advantage of modules and laz
 The application used modules to encapsulate the functionalities to a particular product and grouped all shared components, services, utilities into shared modules. The routing will help the application decide which module is going to load during the runtime by lazy loading.
 
 ```
-|-- package.json
-
-|-- src
-
-|   |-- app
-
-|       |-- module 1 (functional group/product1)
-
-|       |-- module 2 (functional group/product2)
-
-|       |-- shared module
-
-|       |-- asset
-
-|       |-- configs
-
+-- package.json
+-- src
+   ---- app
+    ------ module 1 (functional group/product1)
+    ------ module 2 (functional group/product2)
+    ------ shared module
+    ------ asset
+   ---- configs
 ```
 
 ## Updated structure
@@ -54,6 +46,7 @@ Since the separated products will be managed by the same team, we use **project*
 Now we are having
 
 ```
+
 |-- package.json
 
 |-- projects
