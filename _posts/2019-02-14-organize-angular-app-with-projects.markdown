@@ -22,15 +22,22 @@ The application used modules to encapsulate the functionalities to a particular 
 
 ```
 |-- package.json
-|-- src
-|   |-- app
-|       |-- module 1 (functional group/product1)
-|       |-- module 2 (functional group/product2)
-|       |-- shared module
-|       |-- asset
-|       |-- configs
 
+|-- src
+
+|   |-- app
+
+|       |-- module 1 (functional group/product1)
+
+|       |-- module 2 (functional group/product2)
+
+|       |-- shared module
+
+|       |-- asset
+
+|       |-- configs
 ```
+
 ## Updated structure
 
 Since the separated products will be managed by the same team, we use **project** and **library** to reorganize the application (we will refer it as a workspace to align some terminologies in angular).
@@ -47,8 +54,12 @@ Now we are having
 
 ```
 |-- package.json
+
 |-- projects
+
 |   |-- product1
+
 |   |-- product2
+
 |   |-- shared library
 ```
