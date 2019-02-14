@@ -43,17 +43,16 @@ The application used modules to encapsulate the functionalities to a particular 
 Since the separated products will be managed by the same team, we use **project** and **library** to reorganize the application (we will refer it as a workspace to align some terminologies in angular).
 
 > [Project](https://angular.io/guide/glossary#project)
-> In Angular, a folder within a workspace that contains an Angular app or library. A workspace can contain multiple projects. All apps in a workspace can use libraries in the same workspace.
+> > In Angular, a folder within a workspace that contains an Angular app or library. A workspace can contain multiple projects. All apps in a workspace can use libraries in the same workspace.
 
 > [Library](!https://angular.io/guide/libraries)
-> When you import something from a library in an Angular app, Angular looks for a mapping between the library name and a location on disk. When you install a library package, the mapping is in the node_modules folder. When you build your own library, it has to find the mapping in your tsconfig paths.
+> > When you import something from a library in an Angular app, Angular looks for a mapping between the library name and a location on disk. When you install a library package, the mapping is in the node_modules folder. When you build your own library, it has to find the mapping in your tsconfig paths.
 
 > Generating a library with the Angular CLI automatically adds its path to the tsconfig file. The Angular CLI uses the tsconfig paths to tell the build system where to find the library.
 
 Now we are having
 
-```
-
+~~~
 |-- package.json
 
 |-- projects
@@ -63,5 +62,4 @@ Now we are having
 |   |-- product2
 
 |   |-- shared library
-
-```
+~~~
