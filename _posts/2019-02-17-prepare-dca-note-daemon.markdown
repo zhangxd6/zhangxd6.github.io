@@ -1,6 +1,9 @@
 ---
 title: Prepare DCA Note - Daemon
 date: 2019-02-17 14:17:00 -06:00
+tags:
+- docker
+layout: post
 ---
 
 The `dockerd` daemon is the core of docker. 
