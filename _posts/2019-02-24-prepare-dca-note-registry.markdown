@@ -67,3 +67,10 @@ docker service create \
   --replicas 1 \
   registry:2
 ~~~
+
+# Config Registry
+## Version
+## log to stdout
+## hooks logging hook behavior
+## storage only one backend 
+## auth
