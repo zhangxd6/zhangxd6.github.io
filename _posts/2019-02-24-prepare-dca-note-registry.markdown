@@ -74,3 +74,7 @@ docker service create \
 ## hooks logging hook behavior
 ## storage only one backend 
 ## auth
+
+
+# Sign the image
+https://docs.docker.com/engine/security/trust/content_trust/
