@@ -17,7 +17,7 @@ We will create a there node cluster, 1 manager and 2 worker node
 
 <!--more-->
 
-```
+~~~
 manager_ip = "10.0.3.2"
 
 Vagrant.configure(2) do |config|
@@ -46,14 +46,14 @@ Vagrant.configure(2) do |config|
     end
   end
 end
-```
+~~~
 
 ## Install docker 
 
 ### Docker trial
 ### Install script
 
-```
+~~~
 sudo apt-get remove docker docker-engine docker-ce docker.io
 
 DOCKER_EE_URL="YOUR DOCKER EE URL"
@@ -73,15 +73,15 @@ sudo apt-get install -y \
     curl \
     software-properties-common \
     docker-ee
-```
+~~~
 
 ## Set up UCP
 
 On manager node 
 
-```
+~~~
 sudo docker run --rm -it --name ucp -v /var/run/docker.sock:/var/run/docker.sock docker/ucp install --host-address 10.0.3.2 --interactive --force-minimums
-```
+~~~
 
 Once success, you should be able to access UCP web portal
 
@@ -98,7 +98,7 @@ Once success, you should be able to access UCP web portal
 5 paste docker-compose.yml 
 
 
-```
+~~~
 version: '3.1'
 
 services:
@@ -141,22 +141,22 @@ networks:
     driver: overlay
   ucp-hrm:
     external: true
-```
+~~~
 
 ## Docker cli pack
 
 ## Deploy wordpress k8s
 
-```
+~~~
 # Create MySQL root password as Kubernetes secret
 kubectl create secret generic mysql-root-password -n default --from-literal="password=wordpress"
 kubectl apply -f mysql-demo.yaml
 kubectl apply -f wordpress-demo.yaml
-```
+~~~
 
 mysql-demo.yml
 
-```
+~~~
 apiVersion: v1
 kind: Service
 metadata:
@@ -236,11 +236,11 @@ spec:
       - name: mysql-persistent-storage
         persistentVolumeClaim:
           claimName: mysql-pv-claim
-```
+~~~
 
 wordpress-demo.yml
 
-```
+~~~
 apiVersion: v1
 kind: Service
 metadata:
@@ -322,6 +322,6 @@ spec:
       - name: wordpress-persistent-storage
         persistentVolumeClaim:
           claimName: wp-pv-claim
-```
+~~~
 
 [Credit](https://github.com/yongshin/docker-wordpress)
