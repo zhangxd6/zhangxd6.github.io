@@ -87,7 +87,7 @@ and put logger into usage
         }));
 ~~~
 
-# Founding and Resolution
+# Finding and Resolution
 
 it turns out we have a LINQ query
 ~~~
