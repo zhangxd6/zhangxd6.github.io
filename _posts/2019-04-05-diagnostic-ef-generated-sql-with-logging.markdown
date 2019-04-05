@@ -19,7 +19,7 @@ We noticed the application was getting slower and slower as the number of record
  
  The EF core is used in our data access layer; naturally, we need a way to inspect the generated SQL query to trace back the code. This is where the logging to help.
 
-  EF core uses ASP.NET core logging infrastructure. We can use console logger to print out the command. Good luck with having sharp eyes to flowing ever-scrolling screen. So we opted for a customized logger for this particular prolbem.
+  EF core uses ASP.NET core logging infrastructure. We can use console logger to print out the command. Good luck with having sharp eyes to flowing ever-scrolling screen. So we opted for a customized logger for this particular problem.
 
 ~~~
 public class TraceLogger : ILogger
@@ -89,14 +89,16 @@ and put logger into usage
 
 # Founding and Resolution
 
-it turns out we have a linq query
+it turns out we have a LINQ query
 ~~~
                 var updateclaims = dbcontext.Claims.Where(dc => entity.ContainsKey(dc.Id)).ToArray();
 ~~~
-entity is a dictionary and EF core does not know how to directly translate it to where clause so it fall back to load all records in memory and filter there.
+
+the entity is a dictionary and EF core does not know how to directly translate it to where clause so it falls back to load all records in memory and filter there.
 
 So, we take keys out to an array of long, this way EF core can translate it to proper 
 where clause 
+
 ~~~
 var keys = entity.Keys.ToArray();
         var updateclaims = dbcontext.Claims.Where(dc => keys.Contains(dc.Id)).ToArray();
