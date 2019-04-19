@@ -8,15 +8,17 @@ layout: post
 
 Docker stack simplifies the application management by providing: desired state, rolling updates, simple, scaling operation, health checks.
 <!--more-->
+
 #Simple Process
  Define app in Compose file and deploy and manage it with
  
-```
+~~~
   docker stack deploy
-  cat docker-compose.yml | docker stack deploy --compose-file - vossibility
-```
+  cat docker-compose.yml | docker stack deploy --compose-file - possibility
+~~~
 
 # filtering
+
  * id/ID (--filter id=7be5ei6sqeye, or --filter ID=7be5ei6sqeye)
  * label (--filter label=key=value)
  * model (--filter mode=replicated, or --filter mode=global)
@@ -34,6 +36,6 @@ Docker stack simplifies the application management by providing: desired state, 
 |.Replicas	|Service replicas|
 |.Image	|Service image|
 
-```
+~~~
 docker stack services --format "{{.ID}}: {{.Mode}} {{.Replicas}}"
-```
+~~~
