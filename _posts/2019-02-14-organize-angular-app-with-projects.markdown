@@ -10,6 +10,7 @@ layout: post
 
 There are always business requirements changes that will change your application structures. 
 <!--more-->
+
 # Background
 
 We have an angular (7) application designed to take advantage of modules and lazy-loading by the angular router to divide the application into couples of functional groups that controlled by user permissions. However, the recent business decision is made to break these separated functional groups into individual product offer that has its own permissions. The requires us to reorganize current code base so that we can better develop, maintain, and support these products.  
