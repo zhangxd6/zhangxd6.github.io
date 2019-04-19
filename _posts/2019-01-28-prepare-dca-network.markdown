@@ -10,7 +10,9 @@ Docker network is based on the Container Network Model where libnetwork is docke
 <!--more-->
 
 # CNM
+
 Three build blocks
+
 * Sandboxes - an isolated network stack
 * Endpoints - virtual network interface
 * Networks - software implementation switch
@@ -24,7 +26,7 @@ Three build blocks
 
 data plane
 
-## linux 
+## Linux 
 
  * bridge
  * overlay
