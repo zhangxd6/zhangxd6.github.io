@@ -88,7 +88,9 @@ rm -r /var/lib/docker/swarm
 # Enterprise-grade features
 
 ## Role-based access control
+
   * grant
+
     - Subject - one or more users/team
     - role - a set of permissions
     - collection - the resources the permissions apply to
