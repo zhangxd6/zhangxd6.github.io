@@ -47,15 +47,17 @@ The table below shows what command is executed for different ENTRYPOINT / CMD co
 |No CMD	|error, not allowed	|/bin/sh -c exec_entry p1_entry	|exec_entry p1_entry|
 |CMD [“exec_cmd”, “p1_cmd”]|	exec_cmd p1_cmd	|/bin/sh -c exec_entry p1_entry|	exec_entry p1_entry exec_cmd p1_cmd|
 |CMD [“p1_cmd”, “p2_cmd”]|	p1_cmd p2_cmd|	/bin/sh -c exec_entry p1_entry|	exec_entry p1_entry p1_cmd p2_cmd|
-|CMD exec_cmd p1_cmd|	/bin/sh -c exec_cmd p1_cmd	|/bin/sh -c exec_entry p1_entry|	exec_entry p1_entry| /bin/sh -c exec_cmd p1_cmd|
+|CMD exec_cmd p1_cmd|	/bin/sh -c exec_cmd p1_cmd	|/bin/sh -c exec_entry p1_entry|	exec_entry p1_entry /bin/sh -c exec_cmd p1_cmd|
 
 Note: If CMD is defined from the base image, setting ENTRYPOINT will reset CMD to an empty value. In this scenario, CMD must be defined in the current image to have a value.
 
 ## ARG
+
 An ARG declared before a FROM is outside of a build stage, so it can’t be used in any instruction after a FROM. To use the default value of an ARG declared before the first FROM use an ARG instruction without a value inside of a build stage:
 
 # Compose
- the default name for the compose YAML file is docker-compose.yml. -f flag can be used for custom filename
+
+ the default name for the compose YAML file is docker-compose.yml. -f flag can be used for the custom filename
 
 ## TopLevel
 
@@ -68,6 +70,7 @@ An ARG declared before a FROM is outside of a build stage, so it can’t be used
 * configs 
 
 ## services
+
  * build - Dockerfile location
  * command - main app of container
  * ports - host/container port mapping
