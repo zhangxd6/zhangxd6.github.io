@@ -18,9 +18,11 @@ layout: post
 ~~~
 
   ## add user to docker group
+
 ~~~
   sudo usermod -aG docker username
 ~~~
+
 # Docker for Window server 2016
 
 ~~~
