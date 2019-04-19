@@ -90,6 +90,7 @@ and put logger into usage
 # Finding and Resolution
 
 it turns out we have a LINQ query
+
 ~~~
                 var updateclaims = dbcontext.Claims.Where(dc => entity.ContainsKey(dc.Id)).ToArray();
 ~~~
