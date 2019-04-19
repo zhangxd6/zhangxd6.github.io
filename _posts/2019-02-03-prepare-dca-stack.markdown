@@ -14,7 +14,7 @@ Docker stack simplifies the application management by providing: desired state, 
  
 ~~~
   docker stack deploy
-  cat docker-compose.yml | docker stack deploy --compose-file - possibility
+  cat docker-compose.yml | docker stack deploy --compose-file -
 ~~~
 
 # filtering
