@@ -73,10 +73,15 @@ docker service create \
 ~~~
 
 # Config Registry
+
 ## Version
+
 ## log to stdout
+
 ## hooks logging hook behavior
+
 ## storage only one backend 
+
 ## auth
 
 
