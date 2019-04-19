@@ -50,7 +50,7 @@ In general, you should use volumes where possible. Bind mounts are appropriate f
 
 # command
 
-```
+~~~
  docker volume create
  docker volume rm
  docker volume prune
@@ -59,7 +59,7 @@ In general, you should use volumes where possible. Bind mounts are appropriate f
   --mount type=volume,src=<VOLUME-NAME>,dst=<CONTAINER-PATH>,volume-driver=<DRIVER>,volume-opt=<KEY0>=<VALUE0>,volume-opt=<KEY1>=<VALUE1>
   --name myservice \
   <IMAGE>
-```
+~~~
 
 ## flag -v or --mount 
 
