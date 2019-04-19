@@ -16,17 +16,23 @@ Three build blocks
 * Networks - software implementation switch
 
 #libnetwork
+
 * docker implementation and more 
 * service discovery, ingress load balance, network control, and management plane
 
 # driver
+
 data plane
+
 ## linux 
+
  * bridge
  * overlay
   * macvlan
+
 ## window
   * nat
   * transparent
   * overlay
+
 ## 3rd party
