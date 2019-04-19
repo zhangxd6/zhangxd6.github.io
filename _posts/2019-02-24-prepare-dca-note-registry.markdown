@@ -34,6 +34,7 @@ Docker Registry
 1. get Cert
 2. stop registry if it is running
 3. restart it
+
 ~~~
  docker run -d \
   --restart=always \
@@ -49,10 +50,13 @@ Docker Registry
 # Run registry as swarm service
 1. save the TLS certificate and key as secrets:
 2. label node
+
 ~~~
 docker node update --label-add registry=true node1
 ~~~
+
 3 start service
+
 ~~~
 docker service create \
   --name registry \
