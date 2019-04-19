@@ -8,17 +8,22 @@ layout: post
 
 Docker EE is docker for the enterprise. It is a suite of products.
 <!--more-->
+
 # Components
+
   * DTR - secure on-premise Registry
   * Docker Universal Control Plane - Enterprise-grade Operation UI
   * Docker EE - certified container engine
   * Certified OS/Cloud platform - Certified infrastructure
+
 #Docker EE
+
   * two version
     * CE
     * EE - quarterly release with time-based versioning scheme like 18.06.x-ee 
   * installation
-```
+
+~~~
 sudo apt-get remove docker docker-engine docker-ce docker.io
 
 DOCKER_EE_URL="https://storebits.docker.com/ee/ubuntu/sub-62432feb-d6b1-4014-853b-38a8262010b1"
@@ -38,34 +43,46 @@ sudo apt-get install -y \
     curl \
     software-properties-common \
     docker-ee
-```
+~~~
+
 # Docker Universal Control Plane
+
 #backup swarm
  1. stop docker on a manager
  2. copy /var/lib/docker/swarm
  3. restart docker 
-```
+
+~~~
   service docker restart
-```
+~~~
 #UCP backup
-```
+
+~~~
   docker container run --log-driver none --rm 0i --name ucp -v /var/run/docker.sock:/var/run/docker.sock docker/ucp:2.2.5 backup --interactive --passphrase "" > ucp.bkp
-```
+~~~
+
 # UCP Recover
+
 1. stop docker
-2. delete existing swarm confi
-```
+2. delete existing swarm config
+
+~~~
 rm -r /var/lib/docker/swarm
-```
-3. rstore swarm config
+~~~
+
+3. restore swarm config
 4. init docker 
-```
+
+~~~
   docker swarm init --force-new-cluster
-```
+~~~
+
 5. restore UCP
-```
+
+~~~
  docker container run --rm -i --name ucp -v /var/lib/docker.sock:/var/lib/docker.sock docker/ucp:2.2.5 restore --passphrase ""<ucp.bkp
-```
+~~~
+
 # Docker Trusted Registry 
 
 # Enterprise-grade features
@@ -75,10 +92,12 @@ rm -r /var/lib/docker/swarm
     - Subject - one or more users/team
     - role - a set of permissions
     - collection - the resources the permissions apply to
+
 ## Active Directory Integration
 ## Docker Content Trust
 ## Configuring/Using Docker Trusted Regristry
 ## Image Promotions
+
   * build policy-based automated pipelines to promote images through a set of repositories in DTR
 ## HTTP Routing Mesh
   * layer-7 routing
