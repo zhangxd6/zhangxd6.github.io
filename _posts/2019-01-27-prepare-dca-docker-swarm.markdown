@@ -7,6 +7,7 @@ layout: post
 ---
 
 Docker Swarn is an enterprise-grade secure cluster of docker hosts and an engine for orchestrating microservices apps.
+
 <!--more-->
 * out of the box you get an encrypted distributed cluster store, encrypted networks, mutual TLS, secure cluster join tokens and a PKI the makes managing and rotating certificate a breeze.
 * on the orchestration front, swarm exposes a rich API that allows you to deploy and manage complicated microservices app with ease.
