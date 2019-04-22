@@ -1,6 +1,9 @@
 ---
 title: Yes! I am a Docker Certified Associate
 date: 2019-04-22 07:55:00 -05:00
+tags:
+- docker
+- DCA
 layout: post
 ---
 
