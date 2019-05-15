@@ -22,3 +22,4 @@ Get-NetIPInterface -AddressFamily IPv4 | Sort-Object -Property InterfaceMetric -
 ~~~
 Set-NetIPInterface -InterfaceAlias 'Wi-Fi' -InterfaceMetric 3
 ~~~
+[interfacemetric.PNG](/uploads/interfacemetric.PNG)
