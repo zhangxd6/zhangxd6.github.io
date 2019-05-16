@@ -13,6 +13,7 @@ Visual FoxPro Version 9.0, released in December 2004 and updated in October 2007
 <!--more-->
 1. Compile fox code as DLL
   This requires us to refactor the code to remove all GUI related and compile it into dll.
+
   ![foxpro.PNG](/uploads/foxpro.PNG)
    
 2. Build.Net Asp or Console app as a wrapper
