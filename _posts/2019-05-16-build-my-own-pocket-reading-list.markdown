@@ -7,7 +7,6 @@ layout: post
 Inspired by @wanquribao on how he accomplishes his article list for wanqu.co, I decided to build my own bot to collect tech articles and publish them in the form of blog list.
 <!--more-->
 
-1. How it works
-   
+   ![dataflow.png](/uploads/dataflow.png)
  
  
